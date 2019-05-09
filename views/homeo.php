@@ -5,8 +5,10 @@ require_once "navbar.php"
 
 <div class="artHomeo">
 
- <img class="artH" src="../img/home.jpg">
-Créée par Samuel Hahnemann au début du XIXe siècle, l'homéopathie appartient au domaine des médecines douces.
+ <img class="homeo_img" src="../img/home.jpg">
+
+
+<p>Créée par Samuel Hahnemann au début du XIXe siècle, l'homéopathie appartient au domaine des médecines douces.
 Elle est pratiquée par les médecins dans l'ensemble du monde. Le terme "homéopathie" provient des mots grecs "homoios",
  se traduisant par "similaire" et "pathos" signifiant "maladie". En effet, selon l'homéopathie,
  le semblable guérit le semblable.
@@ -20,7 +22,7 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
   renforcer leurs effets curatifs. Les substances de base proviennent du monde animal, végétal et minéral.
 
 
-
+</p>
 </div>
 
 <div class="homeoprod">

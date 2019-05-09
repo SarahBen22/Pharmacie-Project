@@ -15,11 +15,11 @@ require_once "navbar.php"
 </aside>
 
 
-Définition: La phytothérapie, dont le terme étymologique signifie "soigner par les plantes",
+<p>Définition: La phytothérapie, dont le terme étymologique signifie "soigner par les plantes",
 se présente sous plusieurs formes de nos jours : tisanes, gélules, huiles,
 jus ou même patches. Selon le problème de santé à traiter, la forme,
 la posologie et la nature de la plante utilisée entrent en considération.
-
+</p>
 
 </div>
 
