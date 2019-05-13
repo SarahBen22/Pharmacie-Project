@@ -2,7 +2,7 @@
 <h1> Pharmacie de la Mairie</h1>
 </div>
 
-<nav role="navigation">
+<nav class="navigation" role="navigation">
   <div id="menuToggle">
 
     <input type="checkbox" />

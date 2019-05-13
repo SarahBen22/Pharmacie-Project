@@ -1,7 +1,10 @@
 body{
-  margin: 0 ;
+  margin: 0;
   padding: 0;
+  max-width: 100%;
 }
+
+
 
 /*--------Bandeau/navbar----------*/
 .bandeau{
@@ -11,8 +14,19 @@ body{
   width:100%;
   color:white;
   font-family: 'Srisakdi', cursive;
+  min-height: 60px;
+  z-index: 10;
 }
 
+
+.navigation {
+  position: absolute;
+  /* position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-top: 60px;
+  z-index: 20; */
+}
 
 /*--------Menu-hamburger----------*/
 a
@@ -30,13 +44,12 @@ a:hover
 
 #menuToggle
 {
-  display: block;
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  /* display: block; */
   top: 73px;
   left: 50px;
-
-  z-index: 1;
-
+  max-width: calc(100% - 50px);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -118,15 +131,15 @@ a:hover
  */
 #menu
 {
-  position: absolute;
+  position: fixed;
+  top: 0; bottom: 0;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
-  background-color:rgba(254, 248, 108, 0.7);
+  padding-top: 120px;
+  margin-top: 60px;
+  background-color:rgba(254, 248, 108, 0.9);
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -149,64 +162,65 @@ a:hover
 
 /*--------Page contacts----------*/
 
+.row-container {
+  display: flex;
+  background-image: url(./img/feuille.jpg);
+  background-size: cover;
+  padding-top: 118px;
+  min-height: calc(100vh - 60px);
+}
+
+
+
 #box{
- display: flex;
- border: 2px solid red;
- height: 107vh;
- width: 30vw;
- margin-top: 10%;
-
-
+  flex-basis: 30%;
+  margin-right: 48px;
 }
 
 .coordonnees{
-  display:flex;
-  border: 2px solid blue;
+  /* display:flex; */
+  border-top: 2px solid #95a5a6;
+  border-right:  2px solid #95a5a6;
   justify-content: center;
-  height: 20vh;
-  width: 30vw;
-  /* margin-top: 5%; */
+  /* height: 20vh; */
+  /* width: 30vw; */
   text-align: center;
   vertical-align: baseline;
   font-size: 120%;
-  position: absolute;
-  /* box-sizing: content-box; */
 
 }
+
 
 
 
 .horaires{
-  display:flex;
+  /* display:flex; */
   border: 2px solid gray;
-  height: 20vh;
-  width: 30vw;
   text-align: center;
   font-size: 25px;
-  margin-top: 12%;
   color: white;
   background-color: gray;
-  position:absolute;
 
 }
 
 
-.map{
-  display: flex;
+.map-wrap {
+  /* display: flex; */
   border:1px solid black;
-  width:365px;
-  height:150px;
-  position: absolute;
-  box-sizing: content-box;
-  margin-top: 30%;
+  width:100%;
+  height:300px;
+  margin: auto 0;
+  position: relative;
+  margin: auto;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }
 
 .formu{
-  display: flex;
-  justify-content: center;
-  border: 2px solid yellowgreen;
-  width: 67%;
-  float: right;
+  flex-basis: 70%;
 }
 
 
