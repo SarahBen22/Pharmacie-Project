@@ -179,8 +179,7 @@ a:hover
 
 .coordonnees{
   /* display:flex; */
-  border-top: 2px solid #95a5a6;
-  border-right:  2px solid #95a5a6;
+  border: 2px solid yellow;
   justify-content: center;
   /* height: 20vh; */
   /* width: 30vw; */
@@ -301,7 +300,7 @@ a:hover
 
   float:left;
   width: 50%;
-  height: 100%;
+ 
 
 }
 
@@ -352,7 +351,7 @@ ul li{
 list-style-type: none;
 }
 
-li{
+ul{
 
-text-align:start;
+padding:0;
 }

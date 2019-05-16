@@ -13,7 +13,8 @@ CREATE TABLE profil_client(
         prenom       Varchar (50) NOT NULL ,
         pseudo       Varchar (50) NOT NULL ,
         email        Varchar (50) NOT NULL ,
-        mot_de_passe Varchar (4) NOT NULL
+        mot_de_passe Varchar (4) NOT NULL ,
+        admin        Bool NOT NULL
 	,CONSTRAINT profil_client_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 
@@ -105,6 +106,18 @@ CREATE TABLE commandes_item(
 
 
 #------------------------------------------------------------
+# Table: messages
+#------------------------------------------------------------
+
+CREATE TABLE messages(
+        id           Int  Auto_increment  NOT NULL ,
+        pseudo_id    Int NOT NULL ,
+        commentaires Text NOT NULL
+	,CONSTRAINT messages_PK PRIMARY KEY (id)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
 # Table: dans
 #------------------------------------------------------------
 
@@ -146,19 +159,6 @@ CREATE TABLE contenu_dans_le(
 
 	,CONSTRAINT contenu_dans_le_panier_FK FOREIGN KEY (produits_id,profil_client_id) REFERENCES panier(produits_id,profil_client_id)
 	,CONSTRAINT contenu_dans_le_commandes0_FK FOREIGN KEY (id) REFERENCES commandes(id)
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
-# Table: passe
-#------------------------------------------------------------
-
-CREATE TABLE passe(
-        id               Int NOT NULL ,
-        id_profil_client Int NOT NULL
-	,CONSTRAINT passe_PK PRIMARY KEY (id,id_profil_client)
-
-	,CONSTRAINT passe_commandes_FK FOREIGN KEY (id) REFERENCES commandes(id)
 
 
 
