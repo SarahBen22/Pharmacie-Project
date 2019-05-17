@@ -24,13 +24,8 @@ CREATE TABLE profil_client(
 #------------------------------------------------------------
 
 CREATE TABLE categories(
-        id               Int  Auto_increment  NOT NULL ,
-        homeopathie      Varchar (100) NOT NULL ,
-        phythotherapie   Varchar (100) NOT NULL ,
-        veterinaire      Varchar (100) NOT NULL ,
-        cosmetologie     Varchar (100) NOT NULL ,
-        materiel_medical Varchar (100) NOT NULL ,
-        orthopedie       Varchar (100) NOT NULL
+        id   Int  Auto_increment  NOT NULL ,
+        type Varchar (100) NOT NULL
 	,CONSTRAINT categories_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 
@@ -75,7 +70,7 @@ CREATE TABLE commandes(
         id               Int  Auto_increment  NOT NULL ,
         id_client        Int NOT NULL ,
         num_commande     Varchar (20) NOT NULL ,
-        date_de_commande Varchar (20) NOT NULL ,
+        date_de_commande Datetime NOT NULL ,
         total            Decimal NOT NULL
 	,CONSTRAINT commandes_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
@@ -159,6 +154,11 @@ CREATE TABLE contenu_dans_le(
 
 	,CONSTRAINT contenu_dans_le_panier_FK FOREIGN KEY (produits_id,profil_client_id) REFERENCES panier(produits_id,profil_client_id)
 	,CONSTRAINT contenu_dans_le_commandes0_FK FOREIGN KEY (id) REFERENCES commandes(id)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: passe
 
 
 
