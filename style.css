@@ -15,7 +15,7 @@ body{
   width:100%;
   color:white;
   font-family: 'Srisakdi', cursive;
-  min-height: 60px;
+  min-height: 40px;
   z-index: 10;
 }
 
@@ -23,7 +23,7 @@ body{
 display: flex;
 height: 50px;
 justify-content: flex-end;
-background-color: #d2dae2;
+background-color: #222f3e;
 /* border: 3px solid red; */
 /* box-shadow: #2ed573; */
 width:100%;
@@ -49,12 +49,12 @@ min-height: 20px;
   opacity:0;
   visibility:hidden;
   transition: 0.4s;
-  width:150vw;;
+  width:240vw;;
   height: 60vh;
   flex-wrap: wrap;
   /* justify-content: center;
   align-items: center; */
-  background-color: #f7f1e3;
+  background-color: #dfe6e9;
   border-radius: 4px;
 -webkit-box-shadow: -1px 5px 15px 5px #000000;
 box-shadow: -1px 5px 15px 5px #000000;
@@ -82,7 +82,7 @@ button:focus + .fenetre{
 
 .fermer{
 position:absolute;
-bottom: 25px;
+bottom: 20px;
 right: 20px;
 font-size: 12px;
 cursor: pointer;
@@ -98,7 +98,7 @@ span:hover{
 .member{
 
   font-size: 15px;
-  border:1px solid green;
+  /* border:1px solid green; */
   width:100%;
   height: 15%;
   text-align: center;
@@ -106,16 +106,41 @@ span:hover{
 }
 
 #form_connect{
-
-  border:1px solid orangered;
+  display:flex;
+  /* border:1px solid orangered; */
   font-size:12px;
-  height: 30%;
+  height: 45%;
+
 }
 
 .taille{
 
   width:85%;
   padding:3px;
+}
+
+.inscription_btn{
+  border:3px solid grey;
+  width:130%;
+  min-height:20% ;
+  border-style: ridge;
+  color:white;
+  background-color: #2ed573;
+  padding: 5px;
+
+}
+
+a.inscription_btn{
+text-decoration:none;
+}
+
+.creation{
+
+  border-top:1px solid grey;
+  width: 120%;
+  height: 40%;
+  text-align: center;
+
 }
 /*--------Barre de recherche----------*/
 
@@ -128,6 +153,7 @@ span:hover{
   display: block;
   flex-wrap: wrap;
   margin-top:3px;
+
 
 }
 
@@ -151,6 +177,7 @@ label {
 .recherche{
 
   width:15vw;
+
 }
 
 /*--------Menu-hamburger----------*/
@@ -274,7 +301,7 @@ a:hover
   padding: 50px;
   padding-top: 120px;
   margin-top: 60px;
-  background-color:rgba(254, 248, 108, 0.9);
+  background-color:rgba(47, 79, 79, 0.8);
   list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -364,8 +391,11 @@ a:hover
 
 .footer{
   display: flex;
-  background-color: aquamarine;
+ background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+color:white;
   width: 100%;
+  height:50%;
   bottom: 0;
   left:0;
 }
