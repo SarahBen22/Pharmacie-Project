@@ -37,6 +37,7 @@ min-height: 20px;
   align-items: center;
   min-height: 7vh;
   width: 17vw;
+  position: relative;
 /* border: 2px solid blue; */
 
 }
@@ -48,8 +49,8 @@ min-height: 20px;
   right:30px;
   opacity:0;
   visibility:hidden;
-  transition: 0.4s;
-  width:240vw;;
+  transition: 0.30s;
+  width:240vw;
   height: 60vh;
   flex-wrap: wrap;
   /* justify-content: center;
@@ -61,20 +62,30 @@ box-shadow: -1px 5px 15px 5px #000000;
 z-index: 2;
 }
 
+.ok{
 
-button{
-  position: fixed;
-  width:10%;
+  padding-left: 7px;
+}
+
+
+
+.compte{
+  /* position: fixed; */
+  position:absolute;
+  width:200px;
   background-color:#222f3e;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
   border-radius: 7px;
   color:white;
-  padding:10px;
+  padding:1px;
   cursor: pointer;
+  /* height: 100%; */
+ 
+
 
 }
-button:focus + .fenetre{
+.compte:focus + .fenetre{
 
   opacity:1;
   visibility:visible;
