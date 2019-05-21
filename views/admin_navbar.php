@@ -1,5 +1,11 @@
 <div class="bandeau">
+
+<div class="logo"></div>
+  <div class="nom">
 <h1> Pharmacie de la Mairie</h1>
+</div>
+
+
 </div>
 
 <div class="sous_bandeau">
@@ -8,7 +14,7 @@
 <label for="site-search">
 <input type="search" id="site-search" name="q" placeholder="Recherche...">
 </label>
-<button class="recherche">Rechercher</button>
+<button class="recherche">🔍</button>
 
 </div>
 

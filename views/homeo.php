@@ -25,32 +25,159 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
 </p>
 </div>
 
-<div class="homeoprod">
+<div class="homeoprod_parts">
+
+<div class="big_part_first">
+
+<div class="specifiques">
+
+<table id="specifiques">
+  <p class="table">Les spécifiques</p>
+<tr>
+<th>Fatigue</th>
+<th>Douleurs articulaires</th>
+<th>Torticolis</th>
+<th>Hémorroïdes</th>
+<th>Ballonnements</th>
+</tr>
+
+<tr>
+<td class="ligne_une">Arnica montana 9 CH* fatigue musculaire</td>
+<td class="ligne_une">Arnica montana 9 CH* douleur musculaire</td>
+<td class="ligne_une">Actae racemosa 7 CH* douleurs</td>
+<td class="ligne_une">Aesculus Hippocastanum 4 CH* troubles veineux</td>
+<td class="ligne_une">Carbo vegetabilis 5 CH* hémorroïdes douloureuses</td>
+</tr>
+
+<tr>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux"> 5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+</tr>
+
+<tr>
+<td class="ligne_une">China 7 CH* Sensation d'épuisement</td>
+<td class="ligne_une">Rhus toxicodendron 15 CH* Enraidissement</td>
+<td class="ligne_une">Bryonia 9 CH* Aggravation par le mouvement</td>
+<td class="ligne_une">Lachesis mutus 5 CH* Hémorroïdes douloureuses</td>
+<td class="ligne_une">China rubra 9 CH* gonflement abdominal</td>
+</tr>
+<tr>
+
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+</tr>
+
+<tr>
+<td class="ligne_une">Kalium phosphoricum 15CH* douleur musculaire</td>
+<td class="ligne_une">Ruta graveolens 7CH* douleur des ligaments</td>
+<td class="ligne_une">Lachnanthes 5CH* contracture</td>
+<td class="ligne_une">Nux vomica 9CH* aggravation par les excès alimentaires</td>
+<td class="ligne_une">Lycopodium 7CH* digestion difficile</td>
+</tr>
+
+<tr>
+
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+</tr>
+
+</table>
 
 
-Ici -> produits
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum quasi necessitatibus porro facilis corporis voluptates quae incidunt veniam deserunt omnis, ipsa praesentium asperiores dolorem, numquam architecto dicta quia amet.
-Nesciunt commodi vitae mollitia alias eveniet explicabo, fugit, totam tenetur provident similique, a nobis minima numquam porro at facere suscipit placeat? Consequatur harum hic incidunt doloremque quibusdam molestias, vel vero.
-Corporis ipsa quisquam dolores consequuntur, illum vitae ratione doloremque. Quod itaque eum dolorem. Aut vitae quibusdam corporis tenetur sint culpa iure sit quod. Unde sapiente soluta dicta fuga, ex sit!
-Modi unde nihil error sequi fuga consequuntur, vero tenetur molestiae ratione impedit, minima nemo minus eaque omnis nam cupiditate. Enim error labore necessitatibus nesciunt assumenda nemo molestias nulla amet? Laudantium.
-Velit blanditiis nam in placeat, magnam sequi expedita minus. Pariatur enim laborum, officia iusto vero dolore? Ipsum, placeat blanditiis. Et libero suscipit perspiciatis exercitationem! Iure deleniti quasi quos deserunt earum?
-Voluptas asperiores, sint magni ullam rerum minus quisquam! Tempora temporibus ratione perferendis provident aut veritatis dolores nulla vitae cum accusamus molestias sed nesciunt tempore saepe, culpa dignissimos quidem possimus dicta.
-Quis maxime voluptatibus libero nesciunt impedit ratione voluptatem debitis dolorem nobis praesentium saepe ipsa velit eos, recusandae error soluta fugiat. Sequi, officia? Voluptatum, harum temporibus non assumenda corrupti odio dolorem.
-Sequi, odio officiis temporibus itaque consequuntur maiores perspiciatis ex. Natus repellendus consequatur id facere dolor vel quos vero quam, dolorem nobis. Dolore officiis aperiam illum alias dolorem nihil mollitia iste!
-Et reiciendis iusto vero accusantium delectus necessitatibus iste alias rerum illo praesentium doloribus assumenda voluptatibus voluptates, tenetur, cum consectetur consequuntur quos non enim pariatur, aliquid vitae nam quaerat. Laborum, atque.
-Sequi, accusamus, perferendis vel delectus molestias voluptas minus ipsum blanditiis nam unde reiciendis voluptatum ullam magnam excepturi reprehenderit provident a? Harum odio ut saepe error modi asperiores nesciunt ipsa doloremque!
-Vel blanditiis pariatur obcaecati debitis, consequatur nisi perspiciatis quae assumenda laborum vero neque adipisci iure voluptate sint, amet provident aspernatur ratione? Delectus inventore quaerat porro aliquam consequatur iste fugit minima?
-Aliquam quidem sint magni eligendi, natus eos optio? Quidem, neque, officia provident sequi explicabo asperiores aliquam tempora pariatur ea voluptate porro facere. Est consequuntur totam veniam rerum nulla sed fugit?
-Quisquam quod, asperiores, commodi sint quasi ad velit iure aperiam, veniam officiis pariatur quis quibusdam. Maxime et vero sequi ipsum. Deleniti laborum vero repudiandae placeat autem saepe quos quibusdam fugit.
-A corporis voluptatum libero magni eum nisi omnis fugit exercitationem odit ab delectus itaque accusamus, quae ullam tempore totam necessitatibus nemo atque maiores culpa. Officia qui nulla earum quasi quis.
-Iusto excepturi at ducimus ratione laboriosam quidem ab unde, neque eum libero voluptates, illum rem itaque facilis aperiam cupiditate possimus. Vero dolorum dignissimos facere ducimus iusto qui laborum temporibus autem.
-Possimus in ea velit neque cupiditate consequuntur adipisci excepturi. Quaerat at repellendus quos? Maiores reiciendis ullam dolorem voluptates iusto repudiandae, sint quasi nemo, eum quo velit voluptatem. Ex, iusto est?
-Dignissimos laudantium delectus temporibus dolorem incidunt non, ratione ut quasi quis obcaecati, architecto sint neque, molestias consequatur voluptatum. Deleniti odio porro amet voluptas fuga a dolores reiciendis necessitatibus. Mollitia, rem.
-Amet ullam asperiores facere odit corrupti iusto aut esse nemo alias culpa? Error cumque nihil quod voluptatum aperiam, recusandae officia minima, in quisquam quidem inventore fuga. Debitis placeat temporibus explicabo.
-Delectus quod impedit sapiente laborum libero velit eum, deserunt aut. Quam unde maxime modi quia dignissimos quo porro repellat natus pariatur, asperiores, nihil neque laborum quis dicta aut illum beatae?
-Dicta facilis repellat molestiae accusantium ad atque, et reiciendis sint ab, vel modi reprehenderit cumque, laudantium quidem similique maxime distinctio! Veniam dolorum, exercitationem nostrum ea temporibus repellendus sapiente harum impedit?
+</div>
 
+<div class="quotidiens">
+
+<table id="quotidiens">
+ <p class="table">Les quotidiens</p>
+
+<tr>
+<th>Tabac</th>
+<th>Sport</th>
+</tr>
+
+<tr>
+<td class="ligne_une"> Lobelia inflata 5 CH* désaccoutumance</td>
+
+<td class="ligne_une">Arnica montana 9 CH* fatigue musculaire</td>
+
+</tr>
+
+<tr>
+<td class="ligne_deux">5 granules, à chaque envie de fumer</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Nux vomica 9 CH* irritabilité, besoin de manger</td>
+<td class="ligne_une">Rhus toxicodendron 7 CH* courbatures</td>
+</tr>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<tr>
+
+
+</tr>
+<tr>
+<td class="ligne_une">Staphysagria 15 CH* frustration</td>
+<td class="ligne_une">Cuprum metallicum 5 CH* crampes</td>
+
+</tr>
+
+<tr>
+  <td class="ligne_deux">5 granules, 2 fois par jour</td>
+  <td class="ligne_deux">5 granules, 2 fois par jour</td>
+</tr>
+</table>
+
+</div>
+
+<div class="femme">
+
+<table id="femme">
+
+<tr></tr>
+</table>
+
+</div>
+
+<div class="junior">
+
+
+<table id="junior">
+
+<tr></tr>
+</table>
+
+
+</div>
+
+</div>
+
+<div class="big_part_second">
+
+
+<div class="stress"></div>
+<div class="dermatologie"></div>
+<div class="hiver"></div>
+<div class="ete"></div>
+
+
+
+
+</div>
 </div>
 
 

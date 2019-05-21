@@ -6,7 +6,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
 
   <head>
-    <meta charset="utf-8">
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
        <link rel="stylesheet" type="text/css" href="/PHARMACIE/style.css">
        <link href="https://fonts.googleapis.com/css?family=Srisakdi:700" rel="stylesheet">

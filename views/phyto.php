@@ -23,6 +23,14 @@ la posologie et la nature de la plante utilisée entrent en considération.
 
 </div>
 
+
+
+
+
+<?php
+require_once "footer.php"
+?>
+
 <style>
 body{
 

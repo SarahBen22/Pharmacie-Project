@@ -3,12 +3,28 @@
 
 <div class="footer">
 
-<p>Hello je suis le footer!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque ipsa illum? Illum obcaecati ipsa quam praesentium voluptate eveniet esse animi ad, fuga illo quasi asperiores eum! Veniam, enim accusantium?
-Recusandae vitae mollitia, fugit veritatis eius nemo optio blanditiis ullam impedit laborum delectus facilis vero, sequi similique hic quasi nostrum corrupti rem veniam accusamus autem explicabo? Asperiores corporis recusandae distinctio.
-qui voluptates voluptatum incidunt, explicabo quaerat quam eum quis, cumque at ex porro sit quas voluptas. Modi sed odit doloribus voluptatem nulla?
-es earum, reiciendis eveniet modi nihil expedita harum nam perspiciatis qui voluptas rem similique pariatur!</p>
 
+
+<div class="contact_footer">
+<p class="margin_top">Pharmacie de la mairie d'Athis-mons<br>
+16 rue Valentin Conrart<br>
+91200 Athis-Mons<br>
+01 69 38 44 26</p>
+</div>
+<div class="horaires_footer">
+
+<p class="margin_top">Du Lundi au Vendredi : <br>
+      9h-13h 14H30- 20h <br>
+      Le Samedi: 9h-13h 14h30- 19h</p>
+</div>
+
+
+
+<div class="contact_foot">
+
+<p class="margin_top"> Mentions légales</p>
+ <a href="/PHARMACIE/index.php/contacts">Nous contacter</a>
+</div>
 </div>
 
 </footer>

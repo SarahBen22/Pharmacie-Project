@@ -1,5 +1,5 @@
 <?php
-$content = "views/profil_client.php";
+$content = "views/bb.php";
 require_once "views/layout.php";
 
 ?>
