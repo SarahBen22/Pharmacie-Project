@@ -32,7 +32,10 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
 <div class="specifiques">
 
 <table id="specifiques">
-  <p class="table">Les spécifiques</p>
+
+
+<tr><th>Les spécifiques</th></tr>
+
 <tr>
 <th>Fatigue</th>
 <th>Douleurs articulaires</th>
@@ -40,6 +43,7 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
 <th>Hémorroïdes</th>
 <th>Ballonnements</th>
 </tr>
+
 
 <tr>
 <td class="ligne_une">Arnica montana 9 CH* fatigue musculaire</td>
@@ -99,7 +103,9 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
 <div class="quotidiens">
 
 <table id="quotidiens">
- <p class="table">Les quotidiens</p>
+
+
+<tr><th>Les quotidiens</th></tr>
 
 <tr>
 <th>Tabac</th>
@@ -148,8 +154,69 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
 
 <table id="femme">
 
-<tr></tr>
+ <tr><th>Femme</th></tr>
+<tr>
+<th>Nausées de grossesse</th>
+<th>Jambes lourdes</th>
+<th>Minceur</th>
+<th>Bouffées de chaleur</th>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Ipeca 7 CH* salivation abondante</td>
+<td class="ligne_une">Arnica montana 9 CH* fatigue des jambes</td>
+<td class="ligne_une">Berberis vulgaris 5 CH* elimination urinaire</td>
+<td class="ligne_une">Belladonna 9 CH* transpiration</td>
+
+</tr>
+
+<tr>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux"> 5 granules, 2 fois par jour</td>
+
+</tr>
+
+<tr>
+<td class="ligne_une">Sepia officinalis 9 CH* fatigue des jambes</td>
+<td class="ligne_une">Hamamelis virginiana 7 CH* lourdeur des jambes</td>
+<td class="ligne_une">Natrum sulfuricum 15 CH* rétention d'eau</td>
+<td class="ligne_une">Lachesis mutus 15 CH* ménopause</td>
+
+</tr>
+<tr>
+
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, le soir</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+
+</tr>
+
+<tr>
+<td class="ligne_une">Tabacum 5 CH* sensation de malaise</td>
+<td class="ligne_une">Vipera redi 5 CH* gonflement</td>
+<td class="ligne_une">Thuya occidentalis 9 CH* gonflement</td>
+<td class="ligne_une">Glonoinum 7 CH* rougeur</td>
+
+</tr>
+
+<tr>
+
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, le soir</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+
+</tr>
+
 </table>
+
+
+
 
 </div>
 
@@ -158,7 +225,47 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
 
 <table id="junior">
 
-<tr></tr>
+<tr><th>Junior</th></tr>
+
+<tr>
+<th>Adolescents acné</th>
+<th>Pack bébés</th>
+</tr>
+
+<tr>
+<td class="ligne_une">Kalium bromatum 7 CH* localisation visage et dos</td>
+
+<td class="ligne_une">Arnica montana 9 CH* bosses</td>
+
+</tr>
+
+<tr>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 4 fois par jour</td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Selenium metallicum 9 CH* peau grasse</td>
+<td class="ligne_une">Chamomilla vulgaris 15 CH* poussées dentaires</td>
+</tr>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<tr>
+
+
+</tr>
+<tr>
+<td class="ligne_une">Natrum muriaticum 15 CH* période de croissance</td>
+<td class="ligne_une">Mercurius solubilis 7 CH* douleurs de gencives</td>
+
+</tr>
+
+<tr>
+  <td class="ligne_deux">5 granules, 2 fois par jour</td>
+  <td class="ligne_deux">5 granules, 2 fois par jour</td>
+</tr>
 </table>
 
 
@@ -169,10 +276,212 @@ les substances utilisées en homéopathie visent à reproduire les symptômes pr
 <div class="big_part_second">
 
 
-<div class="stress"></div>
-<div class="dermatologie"></div>
+<div class="stress">
+
+<table id="stress">
+
+ <tr><th>Stress</th></tr>
+<tr>
+<th>Pack stress</th>
+<th>Trouble du sommeil</th>
+<th>Stress, troubles du sommeil</th>
+<th>Examens</th>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Argentum nitricum 7 CH* précipitation </td>
+<td class="ligne_une">Arnica montana 15 CH* surmenage</td>
+<td class="ligne_une">Gelsemium sempervirens 15 CH* trac</td>
+<td class="ligne_une">Gelsemium sempervirens 15 CH* trac</td>
+
+</tr>
+
+<tr>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux"> 5 granules, 2 fois par jour</td>
+
+</tr>
+
+<tr>
+<td class="ligne_une">Gelsemium sempervirens 15 CH* trac</td>
+<td class="ligne_une">Coffea cruda 9 CH* excitation intellectuelle</td>
+<td class="ligne_une">Ignatia amara 9 CH* anxiété</td>
+<td class="ligne_une">Ignatia amara 9 CH* anxiété et émotivité</td>
+
+</tr>
+<tr>
+
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+
+</tr>
+
+<tr>
+<td class="ligne_une">Ignatia amara 9 CH* anxiété</td>
+<td class="ligne_une">Passiflora incarnata 5 CH* insomnie, nervosité</td>
+<td class="ligne_une">Passiflora composé insomnie, nervosité</td>
+<td class="ligne_une">Kalium phosphoricum 7 CH* fatigue intellectuelle</td>
+
+</tr>
+
+<tr>
+
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+
+</tr>
+
+</table>
+
+</div>
+<div class="dermatologie">
+
+<table id="dermato">
+
+<tr><th>Dermatologie</th></tr>
+
+<tr>
+<th>Aphtes</th>
+<th>Verrues</th>
+<th>Bouton labial</th>
+
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Borax 9 CH** début </td>
+<td class="ligne_une">Thuya occidentalis 15 CH* dans tous les cas</td>
+<td class="ligne_une">Apis mellifica 15 CH* gonflement avec picotements</td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+<td class="ligne_deux">5 granules, 1 fois par jour</td>
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Mercurius solubilis 7 CH* douleur et salivation abondante</td>
+<td class="ligne_une">Nitricum acidum 9 CH* verrue de couleur jaune</td>
+<td class="ligne_une">Mezereum 7 CH* croûte</td>
+
+
+</tr>
+<tr>
+
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+<td class="ligne_deux">5 granules, 1 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Nitricum acidum 5 CH* douleur piquante</td>
+<td class="ligne_une">Antimomium crudum 7 CH* verrue dure</td>
+<td class="ligne_une">Rhus toxicodendron 9 CH* vésicules avec liquide chair</td>
+
+
+</tr>
+
+<tr>
+
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 1 fois par jour</td>
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+
+
+</tr>
+
+</table>
+
+</div>
 <div class="hiver"></div>
-<div class="ete"></div>
+
+
+
+
+<div class="ete">
+
+<table id="ete">
+
+<tr><th>Eté</th></tr>
+
+<tr>
+<th>Piqûres d'insectes</th>
+<th>Allergies</th>
+<th>Pack été</th>
+
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Apis mellifica 15 CH*** démangeaisons </td>
+<td class="ligne_une">Poumon histamine 9 CH* dans tous les cas</td>
+<td class="ligne_une">Apis mellifica 15 CH*** piqûres d'insectes, allergies, démangeaisons </td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Echinacea angustifolia 5 CH* risque de surinfection</td>
+<td class="ligne_une">Pollens(Pollantinum) 30 CH*** rhume des foins</td>
+<td class="ligne_une">Arnica montana 9 CH* bleus et bosses</td>
+
+
+</tr>
+<tr>
+
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 1 fois par jour</td>
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+
+
+</tr>
+
+<tr>
+<td class="ligne_une">Ledum palustre 9 CH* limite la sensibilité aux piqûres d'insectes</td>
+<td class="ligne_une">Apis mellifica 15 CH** démangeaisons, nez bouché</td>
+<td class="ligne_une">Nux vomica composé 9 digestion difficile</td>
+
+
+</tr>
+
+<tr>
+
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+<td class="ligne_deux">5 granules, 3 fois par jour</td>
+<td class="ligne_deux">5 granules, 2 fois par jour</td>
+
+
+</tr>
+
+</table>
+
+
+</div>
 
 
 

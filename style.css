@@ -432,6 +432,7 @@ color:white;
   height:70%;
   bottom: 0;
   left:0;
+  margin-top:30px;
 
 }
 
@@ -497,8 +498,29 @@ color:white;
   float: right;
 }
 
+.phyto_big_part{
+/* display: flex;
+flex-direction: column; */
+  margin-left:100px;
+border: 2px solid red;
+}
+
+tr{
+
+border:1px solid grey;
+}
 
 
+.ligne_trois{
+
+  background-color: #b8e994;
+}
+
+.ligne_quatre{
+
+  background-color: #78e08f;
+  /* text-align: center; */
+}
 /*--------Page Homeopathie----------*/
 
 .homeoT{
@@ -535,31 +557,29 @@ color:white;
 
 .homeoprod_parts{
   display: flex;
-
-  border: 2px solid blue;
+  flex-direction: column;
+  /* border: 2px solid blue; */
   margin-top: 10%;
 }
 
 
-#specifiques{
-  border:2px solid yellow;
+#specifiques,#quotidiens,#femme,#junior,#stress,#dermato,#hiver,#ete{
+  border:2px solid darkslategray;
+  margin-top: 20px;
+  margin-left:7px;
 }
 
-#quotidiens{
-  border:2px solid red;
-}
-
-th,td,tr{
+th{
   border:1px solid grey;
 }
 
 .ligne_une{
-background-color: #55efc4;
+background-color: #f78fb3;
 }
 
 .ligne_deux{
 
-background-color: #81ecec;
+background-color: #f8a5c2;
 }
 /*--------Page home----------*/
 
@@ -615,4 +635,97 @@ padding:0;
   margin: 0 auto;
   color:white;
   margin-top:30px;
+}
+
+
+/*--------Page Inscription----------*/
+
+#titre_insc{
+  text-align: center;
+  margin-top:5px;
+}
+.conteneur_inscription{
+  display:flex;
+  flex-direction: column;
+  border:2px solid black;
+  height:700px;
+  width:850px;
+  margin-top: 150px;
+  margin-left:320px;
+  align-items: center;
+}
+
+.nom_insc{
+  margin-top:15px;
+  height:50px;
+  width:215px;
+  border-radius: 4px;
+  margin-left:18px;
+}
+
+.nom_inscr{
+margin-top:15px;
+  height:50px;
+  width:570px;
+  border-radius: 4px;
+  margin-left:18px;
+
+  }
+
+
+#nom_place{
+
+  margin-top:20px;
+  margin-left: 130px;
+}
+
+#prenom_place{
+
+ margin-left: 53px;
+}
+
+#date_place{
+margin-top: 20px;
+margin-left:30px;
+}
+
+#num_place{
+  margin-top: 20px;
+  margin-left:15px;
+}
+
+#adresse_place{
+margin-top: 20px;
+margin-left:50px;
+}
+
+
+#code_place{
+margin-top: 20px;
+margin-left:85px;
+}
+
+#ville_place{
+margin-left:80px;
+
+}
+#mail_place{
+margin-top: 20px;
+margin-left:130px;
+
+}
+
+#mdp_place{
+margin-top: 20px;
+margin-left:15px;
+}
+
+#enregistrer_btn{
+  color:white;
+  border-radius:3px;
+  margin-left: 340px;
+  margin-top: 20px;
+  background-color: #78e08f;
+  font-size:25px;
+
 }
