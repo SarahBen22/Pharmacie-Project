@@ -8,7 +8,8 @@ class profil_clientModel extends Model {
   private $id;
   private $nom;
   private $prenom;
-  private $pseudo;
+  private $adresse;
+  private $telephone;
   private $email;
   private $mot_de_passe;
   private $admin;
@@ -32,14 +33,14 @@ class profil_clientModel extends Model {
     $db=parent::connect();
 
     // on recherche si ce login est déjà utilisé par un autre membre
-    $sql = 'SELECT * FROM profil_client WHERE pseudo="$profil_client->pseudo()"';
+    $sql = 'SELECT * FROM profil_client WHERE email="$profil_client->email()"';
     $req = $db->prepare($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());// voir s il y a une erreur
     $result=$req->execute();
     $data =$req->fetchAll(); //recup les données
 
 
     if (empty($data)) {
-      $sql = 'INSERT INTO profil_client VALUES(0,"mme" ,"'.$profil_client->nom().'","'.$profil_client->prenom().'","'.$profil_client->pseudo().'","'.$profil_client->email().'", "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'",
+      $sql = 'INSERT INTO profil_client VALUES(0,"'.$profil_client->nom().'","'.$profil_client->prenom().'","'.$profil_client->adresse().'","'.$profil_client->email().'", "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'",
       "'.$profil_client->admin().'")';
       $req= $db->prepare($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
       $req->execute();
@@ -57,7 +58,7 @@ class profil_clientModel extends Model {
 
     $db=parent::connect();
 // pour trouver l objet avc le pseudo
-    $sql= "select * from profil_client WHERE pseudo= :pseudo";
+    $sql= "select * from profil_client WHERE nom= :nom";
     $query = $db -> prepare($sql);
     $query->bindValue(':pseudo', $data);
     $query -> execute();
@@ -79,10 +80,11 @@ class profil_clientModel extends Model {
         $this->setId($profil_client['id']);
         $this->setNom($profil_client['nom']);
         $this->setPrenom($profil_client['prenom']);
-        $this->setPseudo($profil_client['pseudo']);
+        $this->setAdresse($profil_client['adresse']);
+        $this->setTelephone($profil_client['telephone']);
         $this->setEmail($profil_client['email']);
         $this->setMot_de_passe($profil_client['mot_de_passe']);
-        $this->setAdmin($profil_client['admin']);
+        // $this->setAdmin($profil_client['admin']);
         return $this;
 
 
@@ -93,10 +95,11 @@ class profil_clientModel extends Model {
       $this->setId($profil_client['id']);
         $this->setNom($profil_client['nom']);
         $this->setPrenom($profil_client['prenom']);
-        $this->setPseudo($profil_client['pseudo']);
+        $this->setAdresse($profil_client['adresse']);
+        $this->setTelephone($profil_client['telephone']);
         $this->setEmail($profil_client['email']);
         $this->setMot_de_passe($profil_client['mot_de_passe']);
-        $this->setAdmin($profil_client['admin']);
+        // $this->setAdmin($profil_client['admin']);
       return $this;
 
 
@@ -121,7 +124,8 @@ class profil_clientModel extends Model {
   public function id() { return $this->id; }
   public function nom() { return $this->nom; }
   public function prenom() { return $this->prenom; }
-  public function pseudo() { return $this->pseudo; }
+  public function adresse() { return $this->adresse; }
+  public function telephone() { return $this->telephone; }
   public function email() { return $this->email; }
   public function mot_de_passe() { return $this->mot_de_passe; }
   public function admin() { return $this->admin; }
@@ -153,9 +157,15 @@ class profil_clientModel extends Model {
 
 
 
-  public function setPseudo( $pseudo ){
-    if(is_string($pseudo)){
-      $this->pseudo = $pseudo;
+  public function setAdresse( $adresse ){
+    if(is_string($adresse)){
+      $this->adresse = $adresse;
+    }
+  }
+
+  public function setTelephone( $telephone ){
+    if(is_string($telephone)){
+      $this->telephone = $telephone;
     }
   }
 
@@ -190,7 +200,8 @@ class profil_clientModel extends Model {
     // bindvalue= valeur qui permet de remplacer un objet ds la requete
     $query->bindValue(':nom', $client->nom());
     $query->bindValue(':prenom', $client->prenom());
-    $query->bindValue(':pseudo', $client->pseudo());
+    $query->bindValue(':adresse', $client->adresse());
+    $query->bindValue(':telephone', $client->telephone());
     $query->bindValue(':email', $client->email());
     $query->bindValue(':mot_de_passe', $client->mot_de_passe());
     $query->bindValue(':admin', $client->admin());

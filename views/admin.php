@@ -16,13 +16,16 @@ require_once "views/admin_navbar.php"
                <a href="/PHARMACIE/index.php/admin_produits"><p>Produits</p></a>
             </li>
           <li class="active">
-               <a href="/PHARMACIE/index.php/admin_categories"><p>Catégories</p></a>
+               <a href="/PHARMACIE/index.php/admin_categories"><p>Catégories & <br> Catégories_pro</p></a>
 
             </li>
 
-          <li class="active">
-                <a href="/PHARMACIE/index.php/admin_commandes">Commandes</a>
+
+            <li class="active">
+                <a href="/PHARMACIE/index.php/admin_professionnels">Professionnels</a>
             </li>
+
+
           <li class="active">
                 <a href="/PHARMACIE/index.php/admin_profil_client">Utilisateurs</a>
 
@@ -43,9 +46,9 @@ require_once "views/admin_navbar.php"
 
 <div class="space_produits"><a href="/PHARMACIE/index.php/admin_produits"><h1>Produits</h1></a></div>
 
-<div class="space_categories"><a href="/PHARMACIE/index.php/admin_categories"><h1>Catégories</h1></a></div>
+<div class="space_categories"><a href="/PHARMACIE/index.php/admin_categories"><h1>Catégories & <br> Catégories_pro</h1></a></div>
 
-<div class="space_commandes"><a href="/PHARMACIE/index.php/admin_commandes"><h1>Commandes</h1></a></div>
+<div class="space_commandes"><a href="/PHARMACIE/index.php/admin_professionnels"><h1>Professionels</h1></a></div>
 
 <div class="space_users"><a href="/PHARMACIE/index.php/admin_profil_client"><h1>Utilisateurs</h1></a></div>
 

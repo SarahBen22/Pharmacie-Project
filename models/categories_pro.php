@@ -2,7 +2,7 @@
 
 require_once "./models/model.php";
 
-class CategoriesModel extends Model {
+class Categories_proModel extends Model {
 	// attributs: correspondance à mes champs ds la bdd
 	  private $id;
 		private $type;
@@ -13,7 +13,7 @@ class CategoriesModel extends Model {
 		$db=parent::connect();
 
 		 // on recherche si ce login est déjà utilisé par un autre membre
-		 $sql = 'SELECT * FROM categories WHERE type="$type)"';
+		 $sql = 'SELECT * FROM categories_pro WHERE type="$type)"';
 		 $req = $db->prepare($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());// voir s il y a une erreur
 		 $result=$req->execute();
 		 $data =$req->fetchAll(); //recup les données
@@ -24,10 +24,10 @@ class CategoriesModel extends Model {
 				$req= $db->prepare($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
 				 $req->execute();
 
-				return "la catégorie a bien été ajouté "; // la catégorie a été ajouté
+				return "la catégorie pro a bien été ajouté "; // la catégorie a été ajouté
 		 }
 		 else {
-				$erreur = 'la catégorie n\'a pas été ajouté correctement';
+				$erreur = 'la catégorie pro n\'a pas été ajouté correctement';
 				return $erreur;
 		 }
 
@@ -68,29 +68,29 @@ class CategoriesModel extends Model {
 
 
 		//UPDATE
-			public function update(CategoriesModel $cat){
+			public function update(Categories_proModel $catpro){
 
 				$db=parent::connect();
 
 				// On teste d'abord si l'utilisateur existe déjà ou si il est vide
-				if($this->exists($cat->type())){
-					return '<p class="red">La\'catégorie'.$cat->type().' est déjà enregistré.</p>';
+				if($this->exists($catpro->type())){
+					return '<p class="red">La\'catégorie'.$catpro->type().' est déjà enregistré.</p>';
 				}
-				elseif($cat->type() == ''){
+				elseif($catpro->type() == ''){
 					return '<p class="red">La catégorie n\'a pas été enregistré correctement.</p>';
 				}
 
-				$sql= "UPDATE cat SET type= :type  WHERE id=".$cat->id();
+				$sql= "UPDATE cat SET type= :type  WHERE id=".$catpro->id();
 				$query= $db -> prepare ($sql);
-				$query->bindValue(':type', $cat->type());
+				$query->bindValue(':type', $catpro->type());
 
 				$result = $query -> execute ();
 
 				if($result){	// Si $result est vrai alors la requête c'est bien déroulé
-					return '<p class="green">La catégorie '.$cat->type().' a bien été modifié.</p>';
+					return '<p class="green">La\'catégorie '.$catpro->type().' a bien été modifié.</p>';
 				}
 				else{
-					return '<p class="red">Echec de la modification de la catégorie '.$cat->type().'</p>';
+					return '<p class="red">Echec de la modification de la catégorie '.$catpro->type().'</p>';
 				}
 			}
 
@@ -103,14 +103,14 @@ class CategoriesModel extends Model {
 		  		$db=parent::connect();
 
 		  		if(is_int($data)){
-		  			$sql= "DELETE FROM categories WHERE id = ".$data;
+		  			$sql= "DELETE FROM categories_pro WHERE id = ".$data;
 		  			$query= $db -> prepare ($sql);
 		  			$query -> execute ();
 
-		  			return '<p class="green">La catégorie a bien été supprimé.</p>';
+		  			return '<p class="green">La catégorie pro a bien été supprimé.</p>';
 		  		}
 
-		  		return '<p class="red">Echec de la suppression de la catégorie.</p>';
+		  		return '<p class="red">Echec de la suppression de la catégorie pro.</p>';
 		  	}
 
 

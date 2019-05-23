@@ -37,7 +37,7 @@
 </label>
 
 <label id="ville_place">Ville
-<input name="ville" type="text" placeholder="code postal" size="40" class="nom_insc" />
+<input name="ville" type="text" placeholder="ville" size="40" class="nom_insc" />
 </label>
 
 <label id="mail_place">Email

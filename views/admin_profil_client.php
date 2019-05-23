@@ -19,12 +19,13 @@ require_once "views/admin_navbar.php"
 
             </li>
           <li class="active">
-               <a href="/PHARMACIE/index.php/admin_categories"><p>Catégories</p></a>
+               <a href="/PHARMACIE/index.php/admin_categories"><p>Catégories & <br> Catégories_pro</p></a>
 
             </li>
 
-          <li class="active">
-                <a href="/PHARMACIE/index.php/admin_commandes">Commandes</a>
+
+            <li class="active">
+                <a href="/PHARMACIE/index.php/admin_professionnels">Professionnels</a>
             </li>
           <li class="active">
                 <a href="/PHARMACIE/index.php/admin_profil_client">Utilisateurs</a>
