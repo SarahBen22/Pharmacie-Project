@@ -8,6 +8,8 @@ body {
 
 .conteneur{
   display: flex;
+  width:100%;
+  border:2px solid yellow;
   /* flex-direction: column; */
 }
 /*--------Sidebars----------*/
@@ -196,6 +198,8 @@ a:hover{
     text-decoration: none;
 }
 
+
+/*--------Admin_produits----------*/
 #addprod{
     width: 50%;
     margin-left: 2%;
@@ -203,10 +207,52 @@ a:hover{
 
 }
 
-#table_prod{
 
-    margin-top: 10%;
-    margin-left: 50%;
+.sous_conteneur_un{
+display:flex;
+/* justify-content: center; */
+flex-direction: column;
+/* border:2px solid red; */
+width:150%;
+margin-left:20%;
+
+}
+#table_prod{
+width:100%;
+
+}
+
+/*--------Admin_professionnels----------*/
+.sous_conteneur_deux{
+
+    /* border: 2px solid blue; */
+    margin-left:5%;
 }
 
 
+
+/*--------Admin_utilisateurs----------*/
+.sous_conteneur_trois{
+
+/* border:2px solid orangered; */
+margin-top:3%;
+margin-left:1%;
+
+}
+
+
+/*--------Admin_catégories----------*/
+
+.sous_conteneur_quatre{
+
+    /* border:2px solid mediumorchid; */
+    margin-top:3%;
+    margin-left: 1%;
+}
+
+.sous_conteneur_cinq{
+
+   /* border: 2px solid firebrick; */
+   margin-top:3%;
+   margin-left: 1%;
+}

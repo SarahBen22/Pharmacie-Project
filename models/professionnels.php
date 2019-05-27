@@ -10,8 +10,10 @@ class ProfessionnelsModel extends Model {
 		private $nom;
 		private $prenom;
 		private $adresse;
+		private $telephone;
+		private $email;
 
-		public function createOne ($id_categories_pro, $nom,$prenom,$adresse){
+		public function createOne ($id_categories_pro, $nom,$prenom,$adresse,$telephone,$email){
 
 		$db=parent::connect();
 
@@ -23,7 +25,7 @@ class ProfessionnelsModel extends Model {
 
 
 		 if (empty($data)) {
-				$sql = 'INSERT INTO panier VALUES(0,"'.$id_categories_pro.'","'.$nom.'","'.$prenom.'","'.$adresse.'")';
+				$sql = 'INSERT INTO panier VALUES(0,"'.$id_categories_pro.'","'.$nom.'","'.$prenom.'","'.$adresse.'","'.$telephone.'","'.$email.'")';
 				$req= $db->prepare($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
 				 $req->execute();
 
@@ -54,8 +56,9 @@ class ProfessionnelsModel extends Model {
 	  public function id_categories_pro() { return $this->id_categories_pro; }
 	  public function nom() { return $this->nom; }
     public function prenom() { return $this->prenom; }
-		 public function adresse() { return $this->adresse; }
-
+	  public function adresse() { return $this->adresse; }
+		public function adresse() { return $this->telephone; }
+		public function adresse() { return $this->email; }
 		// SETTERS // pour assigner des valeurs aux attributs
 
 
@@ -94,6 +97,21 @@ class ProfessionnelsModel extends Model {
 
 	}
 
+	public function setTelephone( $telephone ){
+		if(is_int($telephone )){
+			$this->telephone = $telephone ;
+		}
+
+	}
+
+
+		public function setEmail( $email ){
+		if(is_int($email )){
+			$this->email= $email ;
+		}
+
+	}
+
 		//UPDATE
 			public function update(ProfessionnelsModel $pro){
 
@@ -113,6 +131,8 @@ class ProfessionnelsModel extends Model {
         $query->bindValue(':nom', $pro->nom());
 				$query->bindValue(':prenom', $pro->prenom());
 				$query->bindValue(':adresse', $pro->adresse());
+				$query->bindValue(':telephone', $pro->telephone());
+				$query->bindValue(':email', $pro->email());
 
 				$result = $query -> execute ();
 

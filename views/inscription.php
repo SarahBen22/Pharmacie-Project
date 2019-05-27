@@ -1,57 +1,59 @@
 <?php require_once "navbar.php" ?>
 
-
 <div class="conteneur_inscription">
-
  <h1 id="titre_insc">Inscription</h1>
 
 <form class="inscription">
+  <div class="centrer">
+
+    <div class="test">
+    <div class="nom_place">
+    <label>Nom</label><input name="Nom" type="text" placeholder="Compléter votre nom" size="40" class="nom_insc" >
+
+  </div>
+  <div class="nom_place">
+    <label>Prénom</label><input name="Prénom" type="text" placeholder="Compléter votre prénom" size="40" class="nom_insc"  />
+  </div>
+
+  </div>
 
 
-<label id="nom_place">Nom
-<input name="Nom" type="text" placeholder="Compléter votre nom" size="40" class="nom_insc" />
-</label>
 
+<div class="nom_place">
+<label>Date de naissance</label>
+<input name="Birthdate" type="date"  size="40" class="nom_insc"  />
+</div>
 
-<label id="prenom_place">Prénom
-<input name="Prénom" type="text" placeholder="Compléter votre prénom" size="40" class="nom_insc"  />
-</label>
-
-
-<label id="date_place">Date de naissance
-<input name="Birthdate" type="date"  size="40" class="nom_inscr"  />
-</label>
-
-
-<label id="num_place">Numéro de téléphone
+<div class="nom_place">
+<label>Numéro de téléphone</label>
 <input name="tel" type="tel" placeholder="numéro de tel" size="40" class="nom_insc" />
-</label>
-
-
-<label id="adresse_place">Adresse
+<div>
+<label>Adresse</label>
 <input name="rue" type="text" placeholder="Adresse" size="40" class="nom_insc" />
-</label>
-
-<label id="code_place">Code postal
-<input name="code" type="text" placeholder="code postal" size="40" class="nom_insc" />
-</label>
-
-<label id="ville_place">Ville
-<input name="ville" type="text" placeholder="ville" size="40" class="nom_insc" />
-</label>
-
-<label id="mail_place">Email
-<input name="Mail" type="email" placeholder="Email" size="40" class="nom_insc" />
-</label>
-
-<label id="mdp_place">Mot de passe
-<input name="mdp" type="password" placeholder="mot de passe" size="40" class="nom_insc" />
-</label>
-<br>
-<button type="submit" form="form1" value="Submit" id="enregistrer_btn" >Enregistrer</button>
-</form>
+</div>
 </div>
 
 
+<div class="nom_place">
+<label>Code postal</label>
+<input name="code" type="text" placeholder="code postal" size="40" class="nom_insc" />
+<div>
+<label>Ville</label>
+<input name="ville" type="text" placeholder="ville" size="40" class="nom_insc" />
+</div>
+</div>
 
+<div class="nom_place">
+<label>Email</label>
+<input name="Mail" type="email" placeholder="Email" size="40" class="nom_insc" />
+<div>
+<label>Mot de passe</label>
+<input name="mdp" type="password" placeholder="mot de passe" size="40" class="nom_insc" />
+</div>
+</div>
+
+<button type="submit" form="form1" value="Submit" id="enregistrer_btn" >Enregistrer</button>
+</div>
+</form>
+</div>
 <?php require_once "footer.php"?>

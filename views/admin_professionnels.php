@@ -32,4 +32,59 @@ require_once "views/admin_navbar.php"
         </ul>
     </nav>
 
+<div class="sous_conteneur_deux">
+
+
+    <a href="/PHARMACIE/index.php/addprof/">
+  <button type="button" class="btn btn-secondary" name="addproduct" id="addprod">Ajouter un Professionnel</button></a><br><br>
+
+<div class="container" id="table_pro">
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>Catégorie</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>adresse</th>
+        <th>téléphone</th>
+        <th>Email</th>
+        <th>Editer</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>crème pour les mains</td>
+        <td>Doe</td>
+        <td>30€</td>
+        <td>khjghfjhh</td>
+        <td>06000000</td>
+        <td>klvjkljv@jhklk</td>
+        <td><center>✏️<center></td>
+        <td><center>❌</center></td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>15€</td>
+        <td>khjghfjhh</td>
+        <td>06000000</td>
+        <td>klvjkljv@jhklk</td>
+        <td><center>✏️<center></td>
+        <td><center>❌</center></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>80€</td>
+        <td>khjghfjhh</td>
+        <td>06000000</td>
+        <td>klvjkljv@jhklk</td>
+        <td><center>✏️<center></td>
+        <td><center>❌</center></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
 </div>

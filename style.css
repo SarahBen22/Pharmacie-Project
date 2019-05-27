@@ -674,7 +674,7 @@ padding:0;
   margin-top:5px;
 }
 .conteneur_inscription{
-  display:flex;
+  /* display:flex;
   flex-direction: column;
   border:4px solid #00b894;
   border-style:outset;
@@ -682,7 +682,7 @@ padding:0;
   width:850px;
   margin-top: 150px;
   margin-left:250px;
-  align-items: center;
+  align-items: center; */
 }
 
 .nom_insc{
@@ -694,62 +694,34 @@ padding:0;
 }
 
 .nom_inscr{
-margin-top:15px;
+/* margin-top:15px;
   height:50px;
   width:570px;
   border-radius: 4px;
-  margin-left:18px;
+  margin-left:18px; */
 
   }
+  .conteneur_inscription label{
+    display: table-cell;
+  }
 
-
-#nom_place{
-
-  margin-top:20px;
-  margin-left: 130px;
+.test{
+  display: flex;
 }
-
-#prenom_place{
-
- margin-left: 53px;
-}
-
-#date_place{
-margin-top: 20px;
-margin-left:30px;
-}
-
-#num_place{
-  margin-top: 20px;
-  margin-left:15px;
-}
-
-#adresse_place{
-margin-top: 20px;
-margin-left:50px;
-}
-
-
-#code_place{
-margin-top: 20px;
-margin-left:85px;
-}
-
-#ville_place{
-margin-left:80px;
+.nom_place{
+display: table-row;
 
 }
-#mail_place{
-margin-top: 20px;
-margin-left:130px;
+.conteneur_inscription form{
+  border:4px solid #00b894;
 
 }
+.centrer{
+margin: auto;
+width: 70%;
+border:4px solid red;
 
-#mdp_place{
-margin-top: 20px;
-margin-left:15px;
 }
-
 #enregistrer_btn{
   color:white;
   border-radius:3px;
