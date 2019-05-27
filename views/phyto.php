@@ -428,6 +428,646 @@ la posologie et la nature de la plante utilisée entrent en considération.
 </tr>
 </table>
 
+
+
+<div class="div_names"><h2>Troubles digestifs et du transit</h2></div>
+
+<table id="digestion">
+
+<tr>
+<td class="ligne_trois" >Acidité gastrique, gastrite<br> brûlures d'estomac</td>
+<td class="ligne_quatre" >Argile</td>
+<td class="ligne_quatre" >Fenouil</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre" >Lithothame</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Aérophagie, ballonnements,<br>gaz intestinaux</td>
+<td class="ligne_quatre">Angélique<br>Fenouil</td>
+<td class="ligne_quatre">Argile<br>Romarin</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Charbon végétal<br>Thym</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Cirrhose du foie</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Chardon-Marie</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Cirrhose,<br>douleurs abdominales</td>
+<td class="ligne_quatre">Angélique<br>Fenouil</td>
+<td class="ligne_quatre">Argile<br>Graines de Lin</td>
+<td class="ligne_quatre">Baie de myrtille<br>Levure S.boulardii</td>
+<td class="ligne_quatre">Charbon végétal<br>Mélisse</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Côlon irritable</td>
+<td class="ligne_quatre">Charbon végétal</td>
+<td class="ligne_quatre">Fenouil</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Levure S.boulardii</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Constipation chronique<br>(rééducation du transit)</td>
+<td class="ligne_quatre">Artichaut</td>
+<td class="ligne_quatre">Boldo</td>
+<td class="ligne_quatre">Graines de Lin</td>
+<td class="ligne_quatre">Ispaghul</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Constipation occasionnelle<br>(adulte)</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Séné</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Crampes d'estomac</td>
+<td class="ligne_quatre">Angélique</td>
+<td class="ligne_quatre">Fenouil</td>
+<td class="ligne_quatre">Mélisse</td>
+<td class="ligne_quatre">Romarin</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Crise de foie,Hépatite<br>(ou jaunisse)</td>
+<td class="ligne_quatre">Artichaut<br>Boldo</td>
+<td class="ligne_quatre">Chardon-Marie</td>
+<td class="ligne_quatre">Fumeterre</td>
+<td class="ligne_quatre">Radis noir</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Détoxification</td>
+<td class="ligne_quatre">Pissenlit</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Radis noir</td>
+<td class="ligne_quatre">Sureau</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Diarrhées,<br>infections intestinales</td>
+<td class="ligne_quatre">Argile</td>
+<td class="ligne_quatre">Baie de myrtille</td>
+<td class="ligne_quatre">Charbon végétal</td>
+<td class="ligne_quatre">Levure S.boulardii</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Digestion difficile</td>
+<td class="ligne_quatre">Artichaut</td>
+<td class="ligne_quatre">Boldo<br>curcuma</td>
+<td class="ligne_quatre">Fumeterre<br>Radis noir</td>
+<td class="ligne_quatre">Sauge</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Insuffisance biliaire<br>(stimulation de la vésicule)</td>
+<td class="ligne_quatre">Artichaut</td>
+<td class="ligne_quatre">Boldo</td>
+<td class="ligne_quatre">Fumeterre</td>
+<td class="ligne_quatre">Radis noir</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Migraines d'origine hépatique</td>
+<td class="ligne_quatre">Radis noir</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Saule</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Nausées, mal des transports</td>
+<td class="ligne_quatre">Fenouil</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Fumeterre</td>
+<td class="ligne_quatre">Gingembre</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Nausées de la femme enceinte</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Fumeterre</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Gingembre</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Reconstitution de la flore<br>intestinale, antibiothérapie</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Levure S.boulardii</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Spasmes intestinaux</td>
+<td class="ligne_quatre">Angélique<br>Mélisse</td>
+<td class="ligne_quatre">Baie de Myrtille<br>Romarin</td>
+<td class="ligne_quatre">Ballote<br>Sauge</td>
+<td class="ligne_quatre">Fenouil<br>Thym</td>
+</tr>
+
+</table>
+
+
+
+<div class="div_names"><h2>Troubles de la circulation cérébrale, mémoire, concentration</h2></div>
+
+<table id="brain">
+
+<tr>
+<td class="ligne_trois">Acouphènes</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Ginkgo</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Amélioration de la vision nocturne</td>
+<td class="ligne_quatre">Baie de Myrtille</td>
+<td class="ligne_quatre">Carotte</td>
+<td class="ligne_quatre">Ginkgo</td>
+<td class="ligne_quatre">Goji</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Amélioration des<br>fonctions cognitives</td>
+<td class="ligne_quatre">Bacopa</td>
+<td class="ligne_quatre">Ginkgo<br>Huile de saumon</td>
+<td class="ligne_quatre">Huile de Krill</td>
+<td class="ligne_quatre">Huile de Lin<br>Lécithine de Soja</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Concentration intellectuelle</td>
+<td class="ligne_quatre">Bacopa<br>Ginseng</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Ginkgo</td>
+<td class="ligne_quatre">Huile de Krill<br>Eleuthérocoque</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Insuffisance circulatoire<br>cérébrale</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Ginkgo</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Troubles de la mémoire</td>
+<td class="ligne_quatre">Bacopa </td>
+<td class="ligne_quatre">Ginkgo</td>
+<td class="ligne_quatre">Huile de Krill</td>
+<td class="ligne_quatre">Lécithine de Soja</td>
+</tr>
+
+
+</table>
+
+
+<div class="div_names"><h2>Troubles nerveux, insomnie et stress</h2></div>
+
+<table id="nerf">
+
+<tr>
+<td class="ligne_trois" >Angoisse</td>
+<td class="ligne_quatre" >Argile</td>
+<td class="ligne_quatre" >Fenouil</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre" >Lithothame</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Anxiété</td>
+<td class="ligne_quatre">Aubépine<br>Houblon</td>
+<td class="ligne_quatre">Avena Sativa<br>Mélisse</td>
+<td class="ligne_quatre">Ballote, Millepertuis<br>Coquelicot, Rhodiola</td>
+<td class="ligne_quatre">Escholtzia<br>Valériane</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Baisse de moral<br>dépression légère</td>
+<td class="ligne_quatre">Ballote<br>Millepertuis</td>
+<td class="ligne_quatre">Houblon</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Mélisse<br>Crocus</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Cauchemars</td>
+<td class="ligne_quatre">Coquelicot</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Escholtzia</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Choc émotionnel</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Rhodiola</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Déprime et tension nerveuse</td>
+<td class="ligne_quatre">Millepertuis</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Rhodiola</td>
+<td class="ligne_quatre">Crocus</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Difficultés<br>d'endormissement</td>
+<td class="ligne_quatre">Ballote</td>
+<td class="ligne_quatre">Escholtzia</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Valériane</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Emotivité</td>
+<td class="ligne_quatre">Avena Sativa</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Coquelicot</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Fatigue avec<br>sommeil difficile</td>
+<td class="ligne_quatre">Ginseng</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Valériane</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Insomnie<br>trouble du sommeil</td>
+<td class="ligne_quatre">Aubépine<br>Ballote</td>
+<td class="ligne_quatre">Coquelicot</td>
+<td class="ligne_quatre">Escholtzia<br>Passiflore</td>
+<td class="ligne_quatre">Valériane</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Nervosité</td>
+<td class="ligne_quatre">Aubépine<br>Mélisse</td>
+<td class="ligne_quatre">Avena Sativa<br>Passiflore</td>
+<td class="ligne_quatre">Ballote<br>Rhodiola</td>
+<td class="ligne_quatre">Houblon<br>Valériane</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Réveils matinaux</td>
+<td class="ligne_quatre">Millepertuis</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Passiflore</td>
+<td class="ligne_quatre">Crocus</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Sérénité mentale</td>
+<td class="ligne_quatre">Bacopa</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Rhodiola</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Sevrage des traitements<br>par anxiolitiques</td>
+<td class="ligne_quatre">Aubépine</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Passiflore</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Sevrage des tabagique</td>
+<td class="ligne_quatre">Avena Sativa</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Valériane</td>
+<td class="ligne_quatre">Crocus</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Stress persistant</td>
+<td class="ligne_quatre">Aubépine</td>
+<td class="ligne_quatre">Avena Sativa</td>
+<td class="ligne_quatre">Mélisse<br>Rhodiola</td>
+<td class="ligne_quatre">Valériane</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Trac</td>
+<td class="ligne_quatre">Aubépine</td>
+<td class="ligne_quatre">Coquelicot</td>
+<td class="ligne_quatre">Mélisse</td>
+<td class="ligne_quatre">Rhodiola</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Troubles de l'humeur</td>
+<td class="ligne_quatre">Ballote</td>
+<td class="ligne_quatre">Houblon</td>
+<td class="ligne_quatre">Mélisse<br>Millepertuis</td>
+<td class="ligne_quatre">Crocus</td>
+</tr>
+
+
+
+<tr>
+<td class="ligne_trois">Troubles du sommeil chez l'enfant</td>
+<td class="ligne_quatre">Coquelicot</td>
+<td class="ligne_quatre">Escholtzia</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Houblon</td>
+</tr>
+
+</table>
+
+
+
+
+<div class="div_names"><h2>Troubles du métobolisme</h2></div>
+
+<table id="meta">
+
+<tr>
+<td class="ligne_trois">Anti-inflammatoire</td>
+<td class="ligne_quatre">Cassis</td>
+<td class="ligne_quatre">Harpagophytum</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Saule</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Antioxydant</td>
+<td class="ligne_quatre">Acérola<br>curcuma</td>
+<td class="ligne_quatre">Ginkgo</td>
+<td class="ligne_quatre">Goji</td>
+<td class="ligne_quatre">Resvératrol</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Cholestérol,<br>triglycérides(excès)</td>
+<td class="ligne_quatre">Lécithine de Soja<br>Huile de saumon</td>
+<td class="ligne_quatre">Ail<br>Huile de Krill</td>
+<td class="ligne_quatre">Huile de germes de blé</td>
+<td class="ligne_quatre">Huile de Lin<br>Chitosan végétal</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Diabète léger<br>(non insulino-dépendant)</td>
+<td class="ligne_quatre">Fénugrec<br>Nopal</td>
+<td class="ligne_quatre">Gelée royale</td>
+<td class="ligne_quatre">Olivier</td>
+<td class="ligne_quatre">Resvératrol</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Herpès<br>(prévention des récidives)</td>
+<td class="ligne_quatre">Echinacée</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Propolis</td>
+<td class="ligne_quatre">Thym</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Manque d'appétit</td>
+<td class="ligne_quatre">Curcuma</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Fenugrec</td>
+<td class="ligne_quatre">Pollen</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Prévention d'altérations<br>cellulaires</td>
+<td class="ligne_quatre">Curcuma</td>
+<td class="ligne_quatre">Tige d'Ananas</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Resvératrol</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Transpiration excessive</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Sauge</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+</table>
+
+<div class="div_names"><h2>Problèmes de l'appareil respiratoire (bonchites,nez,gorge)</h2></div>
+
+<table id="breath">
+
+<tr>
+<td class="ligne_trois" >Allergies respiratoires,<br>rhume des foins</td>
+<td class="ligne_quatre" ></td>
+<td class="ligne_quatre" >Plantain</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre" ></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Angine</td>
+<td class="ligne_quatre">Pélargonium</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Propolis</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Asthme,bronchite<br>asthmatiforme</td>
+<td class="ligne_quatre">Marrube blanc</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Plantain</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Bronchite</td>
+<td class="ligne_quatre">Echinacée<br>Pélargonium</td>
+<td class="ligne_quatre">Eucalyptus<br>Propolis</td>
+<td class="ligne_quatre">Marrube blanc<br>Thym</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Etat grippal et fiévreux</td>
+<td class="ligne_quatre">Sureau</td>
+<td class="ligne_quatre">Pélargonium</td>
+<td class="ligne_quatre">Saule</td>
+<td class="ligne_quatre">Acérola</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Infections des voies<br>respiratoires</td>
+<td class="ligne_quatre">Eucalyptus<br>Sureau</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Pélargonium</td>
+<td class="ligne_quatre">Propolis<br>Thym</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Maux de gorge<br>laryngite</td>
+<td class="ligne_quatre">Pélargonium</td>
+<td class="ligne_quatre">Plantain</td>
+<td class="ligne_quatre">Propolis</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Prévention des infections hivernales<br>des maladies virales</td>
+<td class="ligne_quatre">Echinacée<br>Propolis</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Goji</td>
+<td class="ligne_quatre">Pollen<br>Pélargonium</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Rhume, rhinite</td>
+<td class="ligne_quatre">Eucayptus</td>
+<td class="ligne_quatre">Plantain</td>
+<td class="ligne_quatre">Propolis</td>
+<td class="ligne_quatre">Thym</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Sinusite</td>
+<td class="ligne_quatre">Marrube blanc</td>
+<td class="ligne_quatre">Plantain</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Thym</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Toux grasse</td>
+<td class="ligne_quatre">Eucalyptus</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Marrube blanc</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Toux quinteuse<br>et toux nocturne</td>
+<td class="ligne_quatre">Coquelicot</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Thym</td>
+<td class="ligne_quatre">Eucalyptus</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Trachéite</td>
+<td class="ligne_quatre">Coquelicot</td>
+<td class="ligne_quatre">Eucalyptus</td>
+<td class="ligne_quatre">Marrube blanc</td>
+<td class="ligne_quatre">Thym</td>
+</tr>
+
+
+
+</table>
+
+<div class="div_names"><h2>Troubles du système urinaire</h2></div>
+
+<table id="uri">
+
+<tr>
+<td class="ligne_trois" >Adénome prostatique,<br>traitement de l'hypertrophie<br>bénigne de la prostate</td>
+<td class="ligne_quatre" >Huile de pépins de Courge</td>
+<td class="ligne_quatre" ></td>
+<td class="ligne_quatre">Serenoa</td>
+<td class="ligne_quatre" >Racine d'Ortie</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Calculs urinaires</td>
+<td class="ligne_quatre">Orthosiphon</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Pissenlit</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Cystite(crise)</td>
+<td class="ligne_quatre">Bruyère</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Busserole</td>
+<td class="ligne_quatre">Queue de Cerise</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Cystite (prévention)</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Canneberge</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Dépuratif rénal, draineur</td>
+<td class="ligne_quatre">Orthosiphon</td>
+<td class="ligne_quatre">Piloselle</td>
+<td class="ligne_quatre">Pissenlit</td>
+<td class="ligne_quatre">Reine des prés</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Diurétique</td>
+<td class="ligne_quatre">Pissenlit</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Queue de Cerise</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Enurésie (pipi au lit)</td>
+<td class="ligne_quatre">Eleuthérocoque</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Escholtzia</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Rétention d'eau, oedèmes</td>
+<td class="ligne_quatre">Piloselle</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Queue de Cerise</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+</table>
 </div>
 </div>
 

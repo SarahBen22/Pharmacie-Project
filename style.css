@@ -674,6 +674,7 @@ padding:0;
   margin-top:5px;
 }
 .conteneur_inscription{
+  margin-top: 50px;
   /* display:flex;
   flex-direction: column;
   border:4px solid #00b894;
@@ -684,42 +685,56 @@ padding:0;
   margin-left:250px;
   align-items: center; */
 }
-
+.conteneur_inscription h1{
+  margin-bottom: 20px;
+}
 .nom_insc{
-  margin-top:15px;
-  height:50px;
-  width:215px;
+ /* margin-top:15px; */
+  /* height:50px; */
+  /* width:215px; */
   border-radius: 4px;
-  margin-left:18px;
+  /* margin-left:18px; */
+  padding: 15px;
+  margin-bottom: 15px;
+  outline: 0;
+
+  border: 1px solid rgb(209, 194, 194);
+  width: 100%;
+
+
 }
 
 .nom_inscr{
-/* margin-top:15px;
-  height:50px;
-  width:570px;
-  border-radius: 4px;
-  margin-left:18px; */
+  /* margin-top:15px; */
+  /* height:50px; */
+  /* width:570px; */
+  /* border-radius: 4px; */
+  /* margin-left:18px; */
+
 
   }
-  .conteneur_inscription label{
+  .conteneur_inscription label,
+  .conteneur_inscription input{
     display: table-cell;
   }
 
-.test{
-  display: flex;
-}
+
 .nom_place{
 display: table-row;
+/* margin-bottom: 10px; */
 
 }
 .conteneur_inscription form{
-  border:4px solid #00b894;
-
+  /* border:4px solid #00b894; */
+  background: #7bed9f;
+  margin: auto;
+  width: 80%;
+  padding: 43px;
 }
 .centrer{
-margin: auto;
+/* margin: auto;
 width: 70%;
-border:4px solid red;
+border:4px solid red; */
 
 }
 #enregistrer_btn{
