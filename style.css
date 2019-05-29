@@ -70,9 +70,7 @@ min-height: 20px;
   width:240vw;
   height: 60vh;
   flex-wrap: wrap;
-  /* justify-content: center;
-  align-items: center; */
-  background-color: #dfe6e9;
+   background-color: #dfe6e9;
   border-radius: 4px;
 -webkit-box-shadow: -1px 5px 15px 5px #000000;
 box-shadow: -1px 5px 15px 5px #000000;
@@ -87,7 +85,7 @@ z-index: 2;
 
 
 .compte{
-  /* position: fixed; */
+
   position:absolute;
   width:160px;
   background-color:#222f3e;
@@ -97,7 +95,7 @@ z-index: 2;
   color:white;
   padding:1px;
   cursor: pointer;
-  /* height: 100%; */
+
 
 
 
@@ -108,7 +106,7 @@ z-index: 2;
   visibility:visible;
 }
 
-.fermer{
+.fermer span{
 position:absolute;
 bottom: 20px;
 right: 20px;
@@ -177,7 +175,7 @@ text-decoration:none;
  min-height: 7vh;
   width: 45vw;
   /* border: 2px solid yellow; */
-  /* margin-right: 2%; */
+
   display: block;
   flex-wrap: wrap;
   margin-top:3px;
@@ -217,11 +215,7 @@ label {
 
 .navigation {
   position: absolute;
-  /* position: fixed;
-  top: 0;
-  bottom: 0;
-  margin-top: 60px;
-  z-index: 20; */
+
 }
 
 
@@ -374,11 +368,9 @@ a:hover
 }
 
 .coordonnees{
-  /* display:flex; */
+
   border: 2px solid yellow;
   justify-content: center;
-  /* height: 20vh; */
-  /* width: 30vw; */
   text-align: center;
   vertical-align: baseline;
   font-size: 120%;
@@ -389,7 +381,6 @@ a:hover
 
 
 .horaires{
-  /* display:flex; */
   border: 2px solid gray;
   text-align: center;
   font-size: 25px;
@@ -400,8 +391,7 @@ a:hover
 
 
 .map-wrap {
-  /* display: flex; */
-  border:1px solid black;
+   border:1px solid black;
   width:100%;
   height:300px;
   margin: auto 0;
@@ -424,9 +414,9 @@ a:hover
 
 .footer{
   display: flex;
- background-color: #485461;
-background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-color:white;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  color:white;
   width: 100%;
   height:70%;
   bottom: 0;
@@ -448,8 +438,6 @@ color:white;
 }
 
 .contact_footer{
-  /* border: 2px solid pink; */
-  /* text-align: center; */
   width:20%;
   margin-left: 15px;
 
@@ -458,7 +446,6 @@ color:white;
 .horaires_footer{
 /* border: 2px solid purple; */
  margin-left: 70px;
-/* text-align: center; */
 }
 
 .margin_top{
@@ -498,9 +485,7 @@ color:white;
 }
 
 .phyto_big_part{
-/* display: flex;
-flex-direction: column; */
-  margin-left:100px;
+margin-left:100px;
 border: 2px solid red;
 }
 
@@ -518,7 +503,7 @@ border:1px solid grey;
 .ligne_quatre{
 
   background-color: #78e08f;
-  /* text-align: center; */
+
 }
 /*--------Page Homeopathie----------*/
 
@@ -529,8 +514,6 @@ border:1px solid grey;
 }
 
 .artHomeo{
-  /* display:flex; */
-
   border: 3px solid pink;
   overflow: hidden;
   vertical-align: middle;
@@ -547,7 +530,6 @@ border:1px solid grey;
 }
 
 .homeo_img{
-
   float:left;
   width: 50%;
 
@@ -591,11 +573,6 @@ background-color: #f8a5c2;
 
 }
 
-.txtpresent{
-
-  /* border: 2px solid red; */
-}
-
 .utiles{
   display: flex;
   border:3px solid #222f3e;
@@ -607,9 +584,6 @@ background-color: #f8a5c2;
   background-repeat: no-repeat;
   background-size: cover;
   border-top:none;
-
-
-
 
 }
 
@@ -627,33 +601,7 @@ margin-left:30px;
   margin-top:18px;
   text-align: center;
 }
-/*
-.sidebar-category{
 
-  margin-top:7%;
-  border: 2px solid #f7d794;
-  width: 15%;
-  font-size: 17px;
-
-}
-
-.title-category{
-text-align: center;
-border: 2px solid #303952;
-display: block;
-/* width: 10%; */
-/*
-}
-
-ul li{
-
-list-style-type: none;
-}
-
-ul{
-
-padding:0;
-} */
 
 .navbar_cosmeto{
 
@@ -667,6 +615,38 @@ padding:0;
 }
 
 
+.gammes_names{
+  margin-top:4%;
+  border:2px solid #444;
+  width:80%;
+  margin-left:10%;
+}
+
+
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+
+.contenu {
+  padding: 0 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f2f6;
+}
 /*--------Page Inscription----------*/
 
 #titre_insc{
@@ -675,44 +655,22 @@ padding:0;
 }
 .conteneur_inscription{
   margin-top: 50px;
-  /* display:flex;
-  flex-direction: column;
-  border:4px solid #00b894;
-  border-style:outset;
-  height:700px;
-  width:850px;
-  margin-top: 150px;
-  margin-left:250px;
-  align-items: center; */
+
 }
 .conteneur_inscription h1{
   margin-bottom: 20px;
 }
 .nom_insc{
- /* margin-top:15px; */
-  /* height:50px; */
-  /* width:215px; */
   border-radius: 4px;
-  /* margin-left:18px; */
   padding: 15px;
   margin-bottom: 15px;
   outline: 0;
-
   border: 1px solid rgb(209, 194, 194);
   width: 100%;
 
 
 }
 
-.nom_inscr{
-  /* margin-top:15px; */
-  /* height:50px; */
-  /* width:570px; */
-  /* border-radius: 4px; */
-  /* margin-left:18px; */
-
-
-  }
   .conteneur_inscription label,
   .conteneur_inscription input{
     display: table-cell;
@@ -726,23 +684,19 @@ display: table-row;
 }
 .conteneur_inscription form{
   /* border:4px solid #00b894; */
-  background: #7bed9f;
+  background: rgba(46, 204, 113,0.7);
+
   margin: auto;
   width: 80%;
   padding: 43px;
 }
-.centrer{
-/* margin: auto;
-width: 70%;
-border:4px solid red; */
 
-}
 #enregistrer_btn{
   color:white;
   border-radius:3px;
-  margin-left: 340px;
+  margin-left: 42%;
   margin-top: 25px;
-  background-color: #55efc4;
+  background-color: #7f8c8d;
   font-size:25px;
 
 }

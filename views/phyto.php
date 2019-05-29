@@ -1068,6 +1068,205 @@ la posologie et la nature de la plante utilisée entrent en considération.
 </tr>
 
 </table>
+
+
+
+<div class="div_names"><h2>Beauté de la peau, des cheveux et des ongles<br> problèmes dermatologiques</h2></div>
+
+<table id="beaute">
+
+<tr>
+<td class="ligne_trois" >Acné, furoncle</td>
+<td class="ligne_quatre" >Bardane</td>
+<td class="ligne_quatre" >Levure du Bière</td>
+<td class="ligne_quatre">Ortie</td>
+<td class="ligne_quatre" >Pensée sauvage</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Allergie de la peau</td>
+<td class="ligne_quatre">Pensée sauvage</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Plantain</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Alopécie chez l'homme</td>
+<td class="ligne_quatre">Alfalfa</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Levure de Bière</td>
+<td class="ligne_quatre">Serenoa</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Beauté de la peau</td>
+<td class="ligne_quatre">Carotte</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Levure de Bière</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Cheveux gras ou peau grasse</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Ortie</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Cheveux ternes et cassants<br>chute des cheveux, alopécie</td>
+<td class="ligne_quatre">Alfalfa</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Levure de Bière</td>
+<td class="ligne_quatre">Ortie</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Dépuratifs de la peau<br>infections cutanées</td>
+<td class="ligne_quatre">Bardane</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Pensée Sauvage</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Eczéma</td>
+<td class="ligne_quatre">Avena sativa</td>
+<td class="ligne_quatre">Huile d'Onagre</td>
+<td class="ligne_quatre">Huile de Bourrache</td>
+<td class="ligne_quatre">Pensée sauvage</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Ongles ternes et cassants</td>
+<td class="ligne_quatre">Huile de Bourrache</td>
+<td class="ligne_quatre">Levure de Bière</td>
+<td class="ligne_quatre">Ortie</td>
+<td class="ligne_quatre">Alfalfa</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Sécheresse de la peau, teint terne</td>
+<td class="ligne_quatre">Carotte</td>
+<td class="ligne_quatre">Huile de Bourrache</td>
+<td class="ligne_quatre">Huile d'Onagre<br>Huile de germe de Blé</td>
+<td class="ligne_quatre">Levure de Bière</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Préparation au bronzage<br> protection de la peau</td>
+<td class="ligne_quatre">Carotte</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Huile de Bourrache</td>
+<td class="ligne_quatre">Resvératrol</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Psoriasis</td>
+<td class="ligne_quatre">Avena Sativa<br>Huile de germe de Blé</td>
+<td class="ligne_quatre">Escholtzia</td>
+<td class="ligne_quatre">Huile de Bourrache</td>
+<td class="ligne_quatre">Pensée sauvage</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Vergetures</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Huile de Bourrache</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Vieillissement de la peau<br>rides(antioxydant)</td>
+<td class="ligne_quatre">Curcuma<br>Huile de germe de Blé</td>
+<td class="ligne_quatre">Goji</td>
+<td class="ligne_quatre">Huile de Bourrache</td>
+<td class="ligne_quatre">Resvératrol</td>
+</tr>
+
+</table>
+
+
+<div class="div_names"><h2>Troubles féminins</h2></div>
+
+<table id="woman">
+
+<tr>
+<td class="ligne_trois" >Allaitement</td>
+<td class="ligne_quatre" >Fenouil</td>
+<td class="ligne_quatre" ></td>
+<td class="ligne_quatre">Fenugrec</td>
+<td class="ligne_quatre" ></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Bouffées de chaleur (Ménopause)</td>
+<td class="ligne_quatre">Houblon</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Sauge</td>
+<td class="ligne_quatre">Trèfle rouge</td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Maux de tête, migraines</td>
+<td class="ligne_quatre">Partenelle</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Saule</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Ostéoporose</td>
+<td class="ligne_quatre">Alfalfa</td>
+<td class="ligne_quatre">Huile de foie de morue</td>
+<td class="ligne_quatre">Bambou</td>
+<td class="ligne_quatre">Trèfle rouge</td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Pertes blanches, leucorrhées</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Lamier blanc</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Règles irrégulières</td>
+<td class="ligne_quatre">Huile d'Onagre</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Sauge</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+<tr>
+<td class="ligne_trois">Syndrômes prémenstruels</td>
+<td class="ligne_quatre">Fragon</td>
+<td class="ligne_quatre"></td>
+<td class="ligne_quatre">Huile d'Onagre</td>
+<td class="ligne_quatre"></td>
+</tr>
+
+
+<tr>
+<td class="ligne_trois">Troubles de la ménopause</td>
+<td class="ligne_quatre">Alfalfa</td>
+<td class="ligne_quatre">Houblon</td>
+<td class="ligne_quatre">Sauge</td>
+<td class="ligne_quatre">Trèfle rouge</td>
+</tr>
+
+</table>
+
 </div>
 </div>
 
