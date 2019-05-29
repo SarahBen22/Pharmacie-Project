@@ -35,7 +35,7 @@ require_once "views/admin_navbar.php"
 <div class="sous_conteneur_deux">
 
 
-    <a href="/PHARMACIE/index.php/addprof/">
+    <a href="/PHARMACIE/index.php/addpro/">
   <button type="button" class="btn btn-secondary" name="addproduct" id="addprod">Ajouter un Professionnel</button></a><br><br>
 
 <div class="container" id="table_pro">

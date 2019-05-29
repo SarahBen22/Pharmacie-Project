@@ -222,6 +222,25 @@ width:100%;
 
 }
 
+/*--------Admin_add_produit----------*/
+
+.add_prod{
+
+    border:1px solid dimgray;
+    padding:2%;
+    width:30%;
+    margin-left:35%;
+    margin-top:2%;
+}
+
+.add{
+    text-align: center;
+}
+
+.bout{
+
+    justify-content: center;
+}
 /*--------Admin_professionnels----------*/
 .sous_conteneur_deux{
 
@@ -230,13 +249,22 @@ width:100%;
 }
 
 
+/*--------Admin_addpro----------*/
+.add_pro{
 
+    border: 1px solid pink;
+    padding:2%;
+    width:30%;
+    margin-left:35%;
+    margin-top:2%;
+}
 /*--------Admin_utilisateurs----------*/
 .sous_conteneur_trois{
 
 /* border:2px solid orangered; */
 margin-top:3%;
 margin-left:1%;
+
 
 }
 
