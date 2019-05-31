@@ -55,8 +55,6 @@
 <a class="inscription_btn" href="/PHARMACIE/index.php/inscription">Créer mon compte</a>
 </div>
 </div>
-
-
 <span class="fermer">Fermer</span>
 </div>
 

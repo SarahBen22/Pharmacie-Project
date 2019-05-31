@@ -724,3 +724,83 @@ border: 2px solid pink;
 border: 2px solid palevioletred;
 
 }
+
+/*--------Page Ortho----------*/
+
+.ortho{
+  /* border:2px solid khaki; */
+  margin-top:4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_ortho{
+
+  background-image: url("img/mannequin.jpg");
+  /* border:2px solid blue; */
+  background-repeat: no-repeat;
+  width:600px;
+  height: 480px;
+  margin:0 auto;
+
+}
+
+.or{
+  text-align: center;
+}
+
+.one,.two{
+  /* border: 2px solid orchid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top:4%;
+}
+
+.couchage{
+
+border: 2px solid palegreen;
+background-image: url("img/couchage.jpg");
+width:250px;
+height:250px;
+}
+
+.transfert{
+
+border: 2px solid palegreen;
+background-image: url("img/transfert.jpg");
+width:250px;
+height:250px;
+-webkit-box-shadow: 0px 10px 13px -7px #39eb92, -3px 5px 15px 5px rgba(120, 240, 150, 0);
+box-shadow: 0px 10px 13px -7px #2ff086, -3px 5px 15px 5px rgba(141,255,169,0);
+}
+
+.hygiene{
+border: 2px solid palegreen;
+background-image: url("img/hygiene.jpg");
+width:250px;
+height:250px;
+}
+
+.confort{
+border: 2px solid palegreen;
+background-image: url("img/confort.jpg");
+width:250px;
+height:250px;
+
+}
+
+.soins{
+border: 2px solid palegreen;
+background-image: url("img/soins.jpg");
+width:250px;
+height:250px;
+
+}
+
+.puericulture{
+border: 2px solid palegreen;
+background-image: url("img/pueri.jpg");
+width:250px;
+height:250px;
+}
