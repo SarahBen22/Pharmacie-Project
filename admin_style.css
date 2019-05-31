@@ -240,6 +240,7 @@ width:100%;
 .bout{
 
     justify-content: center;
+    margin-left:10%;
 }
 /*--------Admin_professionnels----------*/
 .sous_conteneur_deux{
@@ -283,4 +284,13 @@ margin-left:1%;
    /* border: 2px solid firebrick; */
    margin-top:3%;
    margin-left: 1%;
+}
+/*--------Admin_addcat----------*/
+.add_cat{
+
+    border:1px solid orange;
+    margin-top:5%;
+    width:30%;
+    padding:3%;
+    margin-left:33%;
 }
