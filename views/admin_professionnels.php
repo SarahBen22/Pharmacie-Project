@@ -16,8 +16,8 @@ require_once "views/admin_navbar.php"
                <a href="/PHARMACIE/index.php/admin_produits"><p>Produits</p></a>
 
             </li>
-          <li class="active">
-               <a href="/PHARMACIE/index.php/admin_categories"><p>Catégories</p></a>
+         <li class="active">
+               <a href="/PHARMACIE/index.php/admin_categories"><p>Catégories & <br> Catégories_pro</p></a>
 
             </li>
 

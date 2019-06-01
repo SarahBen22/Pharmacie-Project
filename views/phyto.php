@@ -1276,9 +1276,9 @@ la posologie et la nature de la plante utilisée entrent en considération.
 require_once "footer.php"
 ?>
 
-<style>
+<!-- <style>
 body{
 
    background-color:#d1ccc0;
 }
-</style>
+</style> -->

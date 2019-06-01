@@ -43,6 +43,22 @@ class Route {
     require_once "views/erreur.php";
   }
 }
+
+
+// getting the controller's action
+  public function getAction(){
+    $controllers = $this->formatUrl();
+
+    if(isset($controllers[2])){
+        $action = $controllers[2];
+
+        if($action){
+          return $action;
+        }
+    }
+  }
 }
+
+
 
 ?>

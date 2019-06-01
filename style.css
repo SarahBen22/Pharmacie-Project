@@ -804,3 +804,15 @@ background-image: url("img/pueri.jpg");
 width:250px;
 height:250px;
 }
+
+/*--------Page Veterinaire----------*/
+
+.provet{
+  text-align: center;
+  margin-top:2%;
+}
+
+.vet{
+
+  margin-top:7%;
+}

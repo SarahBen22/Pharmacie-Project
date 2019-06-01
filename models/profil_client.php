@@ -3,7 +3,7 @@
 
 require_once "./models/model.php";
 
-class profil_clientModel extends Model {
+class profil_ClientModel extends Model {
   // attributs: correspondance à mes champs ds la bdd
   private $id;
   private $nom;
@@ -28,7 +28,7 @@ class profil_clientModel extends Model {
     }
   }
 
-  public function createOne (profil_clientModel $profil_client){
+  public function createOne (profil_ClientModel $profil_client){
 
     $db=parent::connect();
 
@@ -40,8 +40,7 @@ class profil_clientModel extends Model {
 
 
     if (empty($data)) {
-      $sql = 'INSERT INTO profil_client VALUES(0,"'.$profil_client->nom().'","'.$profil_client->prenom().'","'.$profil_client->adresse().'","'.$profil_client->email().'", "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'",
-      "'.$profil_client->admin().'")';
+      $sql = 'INSERT INTO profil_client VALUES(0,"'.$profil_client->nom().'","'.$profil_client->prenom().'","'.$profil_client->adresse().'","'.$profil_client->email().'", "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'")';
       $req= $db->prepare($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
       $req->execute();
 
@@ -90,20 +89,7 @@ class profil_clientModel extends Model {
 
       }
     }
-    else{
-// si on le fait 2 fois c pck il y a 2 requetes (une par rapport au pseudo et une au mail)
-      $this->setId($profil_client['id']);
-        $this->setNom($profil_client['nom']);
-        $this->setPrenom($profil_client['prenom']);
-        $this->setAdresse($profil_client['adresse']);
-        $this->setTelephone($profil_client['telephone']);
-        $this->setEmail($profil_client['email']);
-        $this->setMot_de_passe($profil_client['mot_de_passe']);
-        // $this->setAdmin($profil_client['admin']);
-      return $this;
 
-
-    }
 
   }
   public function getAll(){
@@ -116,6 +102,7 @@ class profil_clientModel extends Model {
     $query -> execute();
     $profil_clientList= $query -> fetchAll();
 
+   
     return $profil_clientList;
   }
 
@@ -190,7 +177,7 @@ class profil_clientModel extends Model {
 
 
   //UPDATE
-  public function update(Profil_clientModel $client){
+  public function update(Profil_ClientModel $client){
 
     $db=parent::connect();
 
