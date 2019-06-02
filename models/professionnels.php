@@ -2,7 +2,7 @@
 
 require_once "./models/model.php";
 
-class ProfessionnelsModel extends Model {
+class professionnelsModel extends Model {
 	// attributs: correspondance à mes champs ds la bdd
 
 		private $id;
@@ -25,7 +25,7 @@ class ProfessionnelsModel extends Model {
 
 
 		 if (empty($data)) {
-				$sql = 'INSERT INTO panier VALUES(0,"'.$id_categories_pro.'","'.$nom.'","'.$prenom.'","'.$adresse.'","'.$telephone.'","'.$email.'")';
+				$sql = 'INSERT INTO professionnels_sante VALUES(0,"'.$id_categories_pro.'","'.$nom.'","'.$prenom.'","'.$adresse.'","'.$telephone.'","'.$email.'")';
 				$req= $db->prepare($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
 				 $req->execute();
 
@@ -43,7 +43,7 @@ class ProfessionnelsModel extends Model {
 		$db=parent::connect();
 
 		$sql = "select * from professionnels_sante
-		LEFT JOIN produits on professionnels_sante.id_categories_pro = categories_pro.id ";
+		LEFT JOIN categories_pro on professionnels_sante.id_categories_pro = categories_pro.id ";
 		$query = $db -> prepare($sql);
 		$query -> execute();
 		$panierList= $query -> fetchAll();
@@ -57,8 +57,8 @@ class ProfessionnelsModel extends Model {
 	  public function nom() { return $this->nom; }
     public function prenom() { return $this->prenom; }
 	  public function adresse() { return $this->adresse; }
-		public function adresse() { return $this->telephone; }
-		public function adresse() { return $this->email; }
+		public function telephone() { return $this->telephone; }
+		public function email() { return $this->email; }
 		// SETTERS // pour assigner des valeurs aux attributs
 
 
@@ -113,7 +113,7 @@ class ProfessionnelsModel extends Model {
 	}
 
 		//UPDATE
-			public function update(ProfessionnelsModel $pro){
+			public function update(professionnelsModel $pro){
 
 				$db=parent::connect();
 

@@ -40,7 +40,7 @@ class ProduitsModel extends Model {
 
 			 // je veux tous les champs de Produits
 		$sql = "select * from produits
-		LEFT JOIN categories on produits.categories= categories.id";
+		LEFT JOIN categories on produits.id_categories= categories.id";
 
 	// les left join représentent les clés étrangères ds la BDD (ils réunissent les infos entre les tables)
 		$query = $db -> prepare($sql);
@@ -51,25 +51,6 @@ class ProduitsModel extends Model {
 		return $produitsList;
 	}
 
-	// Fonction qui récupère la liste des produits en fonction de la console
-	public function getByConsole ($categories){
-		$db=parent::connect();
-
-		// je veux tous les produits qui sont sur une console en particulier
-		$sql = "select produits.*
-		LEFT JOIN consoles on produits.id_console= consoles.id
-
-		WHERE consoles.nom_console= :console";
-
-	// les left join représentent les clés étrangères ds la BDD (ils réunissent les infos entre les tables)
-		$query = $db -> prepare($sql);
-		$query->bindValue(':console', $console);
-		$query -> execute();
-		$produitsList= $query -> fetchAll();
-
-
-		return $produitsList;
-	}
 
 	public function get($data){
 

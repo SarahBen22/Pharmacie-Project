@@ -16,13 +16,14 @@ require_once "views/admin_navbar.php"
                <a href="/PHARMACIE/index.php/admin_produits"><p>Produits</p></a>
 
             </li>
-         <li class="active">
+          <li class="active">
                <a href="/PHARMACIE/index.php/admin_categories"><p>Catégories & <br> Catégories_pro</p></a>
 
             </li>
 
-          <li class="active">
-                <a href="/PHARMACIE/index.php/admin_commandes">Commandes</a>
+
+            <li class="active">
+                <a href="/PHARMACIE/index.php/admin_professionnels">Professionnels</a>
             </li>
           <li class="active">
                 <a href="/PHARMACIE/index.php/admin_profil_client">Utilisateurs</a>
@@ -32,10 +33,12 @@ require_once "views/admin_navbar.php"
         </ul>
     </nav>
 
+
+<?php  if(true){?>
 <div class="sous_conteneur_deux">
 
 
-    <a href="/PHARMACIE/index.php/addpro/">
+    <a href="/PHARMACIE/index.php/admin_professionnels/addpro">
   <button type="button" class="btn btn-secondary" name="addproduct" id="addprod">Ajouter un Professionnel</button></a><br><br>
 
 <div class="container" id="table_pro">
@@ -53,38 +56,72 @@ require_once "views/admin_navbar.php"
       </tr>
     </thead>
     <tbody>
+     <?php foreach($prosList as $pros){echo'
       <tr>
-        <td>crème pour les mains</td>
-        <td>Doe</td>
-        <td>30€</td>
-        <td>khjghfjhh</td>
-        <td>06000000</td>
-        <td>klvjkljv@jhklk</td>
-        <td><center>✏️<center></td>
+        <td>'.$pros['type'].'</td>
+        <td>'.$pros['nom'].'</td>
+        <td>'.$pros['prenom'].'</td>
+        <td>'.$pros['adresse'].'</td>
+        <td>'.$pros['telephone'].'</td>
+        <td>'.$pros['email'].'</td>
+        <td><center>✏️</center></td>
         <td><center>❌</center></td>
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>15€</td>
-        <td>khjghfjhh</td>
-        <td>06000000</td>
-        <td>klvjkljv@jhklk</td>
-        <td><center>✏️<center></td>
-        <td><center>❌</center></td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>80€</td>
-        <td>khjghfjhh</td>
-        <td>06000000</td>
-        <td>klvjkljv@jhklk</td>
-        <td><center>✏️<center></td>
-        <td><center>❌</center></td>
-      </tr>
+
+      ';
+      }?>
+
     </tbody>
   </table>
 </div>
 </div>
 </div>
+
+<?php } ?>
+<?php if($action=='addpro') { ?>
+<div class="add_pro">
+
+<h2 class="add">Ajouter un professionnel</h2>
+
+<form>
+
+<br><br>
+<label>Catégories</label><br><br>
+<select name="categorie_pro">
+<option value="infirmiere" selected="selected">Infirmière</option>
+<option value="medecin">Médecin généraliste</option>
+<option value="osteopathe">Ostéopathe</option>
+<option value="dentiste">Dentiste</option>
+<option value="orl">O.R.L</option>
+<option value="ophtalmo">Ophtalmo</option>
+<option value="podologue">Podologue</option>
+</select>
+
+<br><br>
+<label for="Nom_pro">Nom</label><br><br>
+<input type="text" placeholder="Nom" size="30" />
+
+
+<br><br>
+
+<label for="Prenom_pro">Prénom</label><br><br>
+<input type="text" placeholder="Prénom" size="30" />
+
+<br><br>
+<label for="address_pro">Adresse</label><br><br>
+<input type="text" placeholder="Adresse" size="30" />
+
+<br><br>
+<label>Numéro de téléphone</label><br><br>
+<input type="text" placeholder="Adresse" size="30" />
+
+<br><br>
+<label>Email</label><br><br>
+<input type="email" placeholder="email" size="30" />
+
+
+</form>
+<br>
+<button type="button" class="btn btn-secondary" name="addproduct" class="bout" >Ajouter</button>
+</div>
+<?php } ?>

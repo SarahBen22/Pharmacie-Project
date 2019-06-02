@@ -14,6 +14,7 @@ class Model{
 		try{
 			$db= new PDO ("mysql:host=".$this->host.";dbname=".$this->dbname,$this->user,$this->password);
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$db->exec('SET NAMES utf8');
 			return $db;
 		}
 		catch(PDOException $e) {

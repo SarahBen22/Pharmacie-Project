@@ -36,10 +36,10 @@ class Categories_proModel extends Model {
 	public function getAll (){
 
 		$db=parent::connect();
-
+		$sql = "select * from categories_pro";
 		$query = $db -> prepare($sql);
 		$query -> execute();
-		$commandesList= $query -> fetchAll();
+		$categoriesList= $query -> fetchAll();
 
 		return $categoriesList;
 	}
