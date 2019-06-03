@@ -38,7 +38,7 @@ require_once "views/admin_navbar.php"
   <button type="button" class="btn btn-secondary" name="addproduct" id="addcat">Ajouter une Catégorie</button></a><br><br>
 
 
-    <div class="container" id="table_pro">
+    <div class="container" id="cate">
 
   <table class="table table-dark table-striped">
     <thead>
@@ -99,7 +99,7 @@ require_once "views/admin_navbar.php"
   <button type="button" class="btn btn-secondary" name="addproduct" id="addcatpro">Ajouter une Catégorie Professionnelle</button></a><br><br>
 
 
-    <div class="container" id="table_pro">
+    <div class="container" id="cate_pro">
 
   <table class="table table-dark table-striped">
     <thead>

@@ -15,10 +15,12 @@ require_once "navbar.php"
 </aside>
 
 
-<p>Définition: La phytothérapie, dont le terme étymologique signifie "soigner par les plantes",
-se présente sous plusieurs formes de nos jours : tisanes, gélules, huiles,
-jus ou même patches. Selon le problème de santé à traiter, la forme,
-la posologie et la nature de la plante utilisée entrent en considération.
+<p>La phytothérapie, c'est l'emploi des plantes ou de médicaments à base de plantes (poudres,préparations en ampoules,
+  infusions...) pour soigner naturellement les différents maux du corps humain.
+  Elle est très certainement la meilleure approche pour prévenir mais aussi pour soigner la majorité
+  de nos maux du quotidien.
+  <br> Les plantes constituent une réponse de choix pour fournir à l'organisme, de façon naturelle,
+  les substances nécessaires pour maintenir son équilibre vital.
 </p>
 
 </div>
@@ -1068,8 +1070,6 @@ la posologie et la nature de la plante utilisée entrent en considération.
 </tr>
 
 </table>
-
-
 
 <div class="div_names"><h2>Beauté de la peau, des cheveux et des ongles<br> problèmes dermatologiques</h2></div>
 

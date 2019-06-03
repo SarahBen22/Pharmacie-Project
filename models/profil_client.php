@@ -9,6 +9,8 @@ class profil_ClientModel extends Model {
   private $nom;
   private $prenom;
   private $adresse;
+  private $code_postal;
+  private $ville;
   private $telephone;
   private $email;
   private $mot_de_passe;
@@ -40,7 +42,7 @@ class profil_ClientModel extends Model {
 
 
     if (empty($data)) {
-      $sql = 'INSERT INTO profil_client VALUES(0,"'.$profil_client->nom().'","'.$profil_client->prenom().'","'.$profil_client->adresse().'","'.$profil_client->email().'", "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'")';
+      $sql = 'INSERT INTO profil_client VALUES(0,"'.$profil_client->nom().'","'.$profil_client->prenom().'","'.$profil_client->adresse().'","'.$profil_client->code_postal().'","'.$profil_client->ville().'","'.$profil_client->email().'", "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'")';
       $req= $db->prepare($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
       $req->execute();
 
@@ -80,6 +82,8 @@ class profil_ClientModel extends Model {
         $this->setNom($profil_client['nom']);
         $this->setPrenom($profil_client['prenom']);
         $this->setAdresse($profil_client['adresse']);
+        $this->setCode_postal($profil_client['code_postal']);
+        $this->setVille($profil_client['ville']);
         $this->setTelephone($profil_client['telephone']);
         $this->setEmail($profil_client['email']);
         $this->setMot_de_passe($profil_client['mot_de_passe']);
@@ -102,7 +106,7 @@ class profil_ClientModel extends Model {
     $query -> execute();
     $profil_clientList= $query -> fetchAll();
 
-   
+
     return $profil_clientList;
   }
 
@@ -112,6 +116,8 @@ class profil_ClientModel extends Model {
   public function nom() { return $this->nom; }
   public function prenom() { return $this->prenom; }
   public function adresse() { return $this->adresse; }
+  public function code_postal() { return $this->code_postal; }
+  public function ville() { return $this->ville; }
   public function telephone() { return $this->telephone; }
   public function email() { return $this->email; }
   public function mot_de_passe() { return $this->mot_de_passe; }
@@ -150,6 +156,17 @@ class profil_ClientModel extends Model {
     }
   }
 
+  public function setCode_postal( $code_postal ){
+    if(is_string($code_postal)){
+      $this->code_postal = $code_postal;
+    }
+  }
+
+  public function setVille( $ville ){
+    if(is_string($ville)){
+      $this->ville = $ville;
+    }
+  }
   public function setTelephone( $telephone ){
     if(is_string($telephone)){
       $this->telephone = $telephone;
@@ -188,6 +205,8 @@ class profil_ClientModel extends Model {
     $query->bindValue(':nom', $client->nom());
     $query->bindValue(':prenom', $client->prenom());
     $query->bindValue(':adresse', $client->adresse());
+    $query->bindValue(':code_postal', $client->code_postal());
+    $query->bindValue(':ville', $client->ville());
     $query->bindValue(':telephone', $client->telephone());
     $query->bindValue(':email', $client->email());
     $query->bindValue(':mot_de_passe', $client->mot_de_passe());

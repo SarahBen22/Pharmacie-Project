@@ -44,13 +44,13 @@ require_once "views/admin_navbar.php"
 
 <div class="acces_spaces">
 
-<div class="space_produits"><a href="/PHARMACIE/index.php/admin_produits"><h1>Produits</h1></a></div>
+<div class="space_produits"><a href="/PHARMACIE/index.php/admin_produits"><h3><br>Produits</h3></a></div>
 
-<div class="space_categories"><a href="/PHARMACIE/index.php/admin_categories"><h1>Catégories & <br> Catégories_pro</h1></a></div>
+<div class="space_categories"><a href="/PHARMACIE/index.php/admin_categories"><h3><br>Catégories & <br> Catégories_pro</h3></a></div>
 
-<div class="space_commandes"><a href="/PHARMACIE/index.php/admin_professionnels"><h1>Professionels</h1></a></div>
+<div class="space_professionnels"><a href="/PHARMACIE/index.php/admin_professionnels"><h3><br>Professionels</h3></a></div>
 
-<div class="space_users"><a href="/PHARMACIE/index.php/admin_profil_client"><h1>Utilisateurs</h1></a></div>
+<div class="space_users"><a href="/PHARMACIE/index.php/admin_profil_client"><h3><br>Utilisateurs</h3></a></div>
 
 </div>
 

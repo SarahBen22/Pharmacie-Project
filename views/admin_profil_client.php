@@ -49,7 +49,9 @@ require_once "views/admin_navbar.php"
       <tr>
         <th>Nom</th>
         <th>Prénom</th>
-        <th>adresse</th>
+        <th>Adresse</th>
+        <th>Code postal</th>
+        <th>Ville</th>
         <th>téléphone</th>
         <th>Email</th>
         <th>Mot de passe</th>
@@ -64,6 +66,8 @@ require_once "views/admin_navbar.php"
         <td>'.$user['nom'].'</td>
         <td>'.$user['prenom'].'</td>
         <td>'.$user['adresse'].'</td>
+        <td>'.$user['code_postal'].'</td>
+        <td>'.$user['ville'].'</td>
         <td>'.$user['telephone'].'</td>
         <td>'.$user['email'].'</td>
         <td>'.$user['mot_de_passe'].'</td>

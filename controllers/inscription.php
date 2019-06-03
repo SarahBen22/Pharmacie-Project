@@ -4,23 +4,30 @@ require_once "views/layout.php";
 require_once "models/profil_client.php";
 
 // on teste si le visiteur a soumis le formulaire
-if (true) {// isset= permet de voir si une variable est définie
-  // on teste l'existence de nos variables. On teste également si elles ne sont pas vides
-  if (isset($_POST['email'])) {// on cherche à savoir si la pers a appuyé sur le bouton
+if (isset($_POST['inscription']) && $_POST['inscription'] == 'Inscription') {// isset= permet de voir si une variable est définie
+	 // on teste l'existence de nos variables. On teste également si elles ne sont pas vides
+	 if ((isset($_POST['email']) && !empty($_POST['email'])) && (isset($_POST['mot_de_passe']) && !empty($_POST['mot_de_passe'])) && (isset($_POST['nom']) && !empty($_POST['nom']))) {
+			// on teste les deux mots de passe
+			if ($_POST['mdp'] != $_POST['mdp_confirm']) {
+				 $erreur = 'Les 2 mots de passe sont différents.';
+			}
+			else {
+				$insc= new profil_clientModel (['id' => 0 , 'civilite' =>"",'nom' =>"",'prenom' => "",'date_de_naissance' => '1991-03-22',
+         'adresse_postale' => "",'telephone' => "",'pseudo' => $_POST['pseudo'],'mdp' => $_POST['mdp'],'mail' =>"",'admin' => "no"]);
+				$erreur= $insc-> createOne($insc);
+			  $insc= $insc->getAll($_POST['pseudo']);
 
-    $client= new profil_ClientModel(['id' => $_POST['id'] ,'nom' => htmlspecialchars($_POST['nom']),'prenom' =>  htmlspecialchars($_POST['prenom']),
-    'adresse' =>  htmlspecialchars($_POST['adresse']),'telephone' =>  htmlspecialchars($_POST['telephone']),'mot_de_passe' =>  htmlspecialchars($_POST['mot_de_passe']),'email' =>  htmlspecialchars($_POST['email']),'admin' => "0"]);
-
-    //htmlspecialchars= protection des données =SECURITE
-
-    $erreur= $client-> create($client);
-
-    if ($erreur==0)
-    $_SESSION['email'] = $_POST['email'];
-
-  }
-  else {
-    $erreur = 'Au moins un des champs est vide.';
-  }
+				if ($erreur==0)
+				$_SESSION['pseudo'] = $client->pseudo();
+		    $_SESSION['mail'] = $client->mail();
+				$_SESSION['id'] = $client->id();
+		    $_SESSION['admin'] = $client->admin();
+				header ("location: ./profil_client");
+			}
+	 }
+	 else {
+			$erreur = 'Au moins un des champs est vide.';
+	 }
 }
+
 ?>

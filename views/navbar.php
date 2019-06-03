@@ -1,73 +1,56 @@
 <div class="bandeau">
 
-<div class="logo"></div>
+  <div class="logo"></div>
   <div class="nom">
-<h1> Pharmacie de la Mairie</h1>
-</div>
+    <a href="/PHARMACIE/index.php" class="pharmacie_titre"><h1> Pharmacie de la Mairie</h1></a>
+  </div>
+  </div>
 
+  <div class="sous_bandeau">
 
-</div>
-
-
-<div class="sous_bandeau">
-
-<div class="barre">
-<label for="site-search">
-<input type="search" id="site-search" name="q" placeholder="Recherche...">
-</label>
-<button class="recherche">🔍</button>
-
-</div>
-
-  <div class="member-container">
-
-
-    <button type="button" name="button" class="compte">Mon compte</button>
-
-    <div class="fenetre">
-
-    <div class="member">
-      <p class="connect">Avez-vous déjà un compte?Connectez-vous!</p>
+    <div class="barre">
+      <label for="site-search">
+        <input type="search" id="site-search" name="q" placeholder="Recherche...">
+      </label>
+      <button class="recherche">🔍</button>
     </div>
 
 
-<div id="form_connect">
-  <form class="connexion" action="navbar.php" method="post">
+    <div class="member-container">
 
- <label class="ok">Adresse email
-   <br>
-    <input name="emailo" class="taille" type="email" placeholder="Email" />
-</label>
+    <button type="button" name="button" class="compte" id="btn_mon_compte">Mon compte</button>
 
- <label class="ok">Mot de passe
-   <br>
-    <input name="mdp" class="taille" type="password" placeholder="Mot de passe" />
-  </label>
+      <div class="fenetre" id="fenetre">
+        <div class="member">
+          <p class="connect">Avez-vous déjà un compte?Connectez-vous!</p>
+        </div>
 
- <input type="submit" name="se_connecter" value="Me connecter" href="/PHARMACIE/index.php/connexion" />
-  </form>
+        <div id="form_connect">
+          <form class="connexion" action="navbar.php" method="post">
+            <label class="ok">Adresse email<br></label>
+              <input name="emailo" class="taille" type="email" placeholder="Email" />
+
+            <label class="ok">Mot de passe<br></label>
+              <input name="mdp" class="taille" type="password" placeholder="Mot de passe" /><br><br>
+              <input type="submit" name="se_connecter" value="Me connecter" class="connecter" href="/PHARMACIE/index.php/connexion" />
+            </form>
+          </div>
+
+  <div class="creation">
+     <p id="no_compte" >Pas de compte?<br>Inscrivez-vous!</p>
+
+    <div class="btn_create_compte">
+      <a class="inscription_btn" href="/PHARMACIE/index.php/inscription">Créer mon compte</a>
+    </div>
+  </div>
+    <span class="fermer" id="btn_fermer">Fermer</span>
+  </div>
+  </div>
 </div>
-
-<div class="creation">
-  <p id="no_compte" >Pas de compte?<br>Inscrivez-vous!</p>
-
-  <div class="btn_create_compte">
-<a class="inscription_btn" href="/PHARMACIE/index.php/inscription">Créer mon compte</a>
-</div>
-</div>
-<span class="fermer">Fermer</span>
-</div>
-
-
-</div>
-
-</div>
-
 
 
 <nav class="navigation" role="navigation">
   <div id="menuToggle">
-
     <input type="checkbox" />
 
     <span></span>
