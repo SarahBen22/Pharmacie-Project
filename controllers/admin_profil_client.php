@@ -9,7 +9,7 @@ global $action;
 $client= new profil_ClientModel(['id' => $_POST['id'] ,'nom' => htmlspecialchars($_POST['nom']),'prenom' =>  htmlspecialchars($_POST['prenom']),
     'adresse' =>  htmlspecialchars($_POST['adresse']),'code_postal' =>  htmlspecialchars($_POST['code_postal']),'ville' =>  htmlspecialchars($_POST['ville']),'telephone' =>  htmlspecialchars($_POST['telephone']),'mot_de_passe' =>  htmlspecialchars($_POST['mot_de_passe']),'email' =>  htmlspecialchars($_POST['email']),'admin' => "0"]);
 
-  //   //htmlspecialchars= protection des données =SECURITE
+  //htmlspecialchars= protection des données =SECURITE
 
     $erreur= $client-> create($client);
 

@@ -30,23 +30,23 @@ require_once "navbar.php"
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-80 " height="300px" src="img/homeo.jpeg" alt="First slide">
+        <img class="d-block w-80 " height="300px" src="../img/homeo.jpeg" alt="First slide">
       </div>
 
       <div class="carousel-item">
-        <img class="d-block w-98" height="300px" src="img/phyto.jpg" alt="Second slide">
+        <img class="d-block w-98" height="300px" src="../img/phyto.jpg" alt="Second slide">
       </div>
 
       <div class="carousel-item">
-        <img class="d-block w-80" height="300px" src="img/cosmeto.jpg" alt="Third slide">
+        <img class="d-block w-80" height="300px" src="../img/cosmeto.jpg" alt="Third slide">
        </div>
 
       <div class="carousel-item">
-        <img class="d-block w-80" height="300px" src="img/ortho.jpg" alt="Fourth slide">
+        <img class="d-block w-80" height="300px" src="../img/ortho.jpg" alt="Fourth slide">
       </div>
 
       <div class="carousel-item">
-        <img class="d-block w-80 " height="300px" src="img/vet.jpg" alt="Fifth slide">
+        <img class="d-block w-80 " height="300px" src="../img/vet.jpg" alt="Fifth slide">
       </div>
     </div>
 
@@ -77,7 +77,7 @@ require_once "navbar.php"
 
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="img/neutre.png" width="120px" height="60%">
+    <img class="card-img-top" src="../img/neutre.png" width="120px" height="60%">
     <div class="card-body">
       <h4 class="card-title">Produit 1</h4>
       <p class="card-text">blablablalablabla.</p>
@@ -86,7 +86,7 @@ require_once "navbar.php"
   </div>
 
   <div class="card">
-    <img class="card-img-top" src="img/neutre.png" width="120px" height="60%">
+    <img class="card-img-top" src="../img/neutre.png" width="120px" height="60%">
     <div class="card-body">
       <h4 class="card-title">Produit 2</h4>
       <p class="card-text">blablablalablabla.</p>
@@ -95,7 +95,7 @@ require_once "navbar.php"
   </div>
 
   <div class="card">
-    <img class="card-img-top" src="img/neutre.png" width="120px" height="60%">
+    <img class="card-img-top" src="../img/neutre.png" width="120px" height="60%">
     <div class="card-body">
       <h4 class="card-title">Produit 3</h4>
       <p class="card-text">blablablalablabla.</p>

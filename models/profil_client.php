@@ -35,21 +35,25 @@ class profil_ClientModel extends Model {
     $db=parent::connect();
 
     // on recherche si ce login est déjà utilisé par un autre membre
-    $sql = 'SELECT * FROM profil_client WHERE email="$profil_client->email()"';
+    $sql = 'SELECT * FROM profil_client WHERE nom="'.$profil_client->nom().'"';
     $req = $db->prepare($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());// voir s il y a une erreur
     $result=$req->execute();
     $data =$req->fetchAll(); //recup les données
 
 
     if (empty($data)) {
-      $sql = 'INSERT INTO profil_client VALUES(0,"'.$profil_client->nom().'","'.$profil_client->prenom().'","'.$profil_client->adresse().'","'.$profil_client->code_postal().'","'.$profil_client->ville().'","'.$profil_client->email().'", "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'")';
+      $sql = 'INSERT INTO profil_client VALUES(0,"'.$profil_client->nom().'","'.$profil_client->prenom().'",
+      "'.$profil_client->adresse().'","'.$profil_client->code_postal().'","'.$profil_client->ville().'",
+      "'.$profil_client->telephone().'", "'.$profil_client->email().'",
+       "'. password_hash($profil_client->mot_de_passe(),PASSWORD_DEFAULT).'",0)';
+
       $req= $db->prepare($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
       $req->execute();
 
       return "Félicitation, votre inscription a bien été prise en compte"; // utilisateur a été ajouté
     }
     else {
-      $erreur = 'Un membre possède déjà ce pseudo.';
+      $erreur = 'Un membre possède déjà ce nom.';
       return $erreur;
     }
 
@@ -58,26 +62,26 @@ class profil_ClientModel extends Model {
   public function getByData ($data){
 
     $db=parent::connect();
-// pour trouver l objet avc le pseudo
-    $sql= "select * from profil_client WHERE nom= :nom";
+// pour trouver l objet avc le nom
+    $sql= "select * from profil_client WHERE email= :email";
     $query = $db -> prepare($sql);
-    $query->bindValue(':pseudo', $data);
+    $query->bindValue(':email', $data);
     $query -> execute();
     $profil_client= $query -> fetch();
 
     if (empty($profil_client)){
-      $sql= "select * from profil_client WHERE email= ".$data;
+      $sql= "select * from profil_client WHERE nom= '".$data."'";
       $query = $db -> prepare($sql);
       $query -> execute();
       $profil_client= $query -> fetch();
 
       if(empty($profil_client)){
 
-        return FALSE;
+        return $this;
       }
       else{
-
-        // On enregistre les valeurs dans l'objet actuel pour pouvoir renvoyer mon objet à la ligne 94
+echo'test3';
+        // On enregistre les valeurs dans l'objet actuel pour pouvoir renvoyer mon objet à la ligne 96
         $this->setId($profil_client['id']);
         $this->setNom($profil_client['nom']);
         $this->setPrenom($profil_client['prenom']);
@@ -87,12 +91,15 @@ class profil_ClientModel extends Model {
         $this->setTelephone($profil_client['telephone']);
         $this->setEmail($profil_client['email']);
         $this->setMot_de_passe($profil_client['mot_de_passe']);
+        $this->setAdmin($profil_client['admin']);
         // $this->setAdmin($profil_client['admin']);
         return $this;
 
 
       }
+    
     }
+
 
 
   }
@@ -198,7 +205,8 @@ class profil_ClientModel extends Model {
 
     $db=parent::connect();
 
-    $sql= "UPDATE profil_client SET   nom = :nom, prenom = :prenom,  email= :email,  admin= :admin WHERE id=".$client->id();
+    $sql= "UPDATE profil_client SET   nom = :nom, prenom = :prenom, adresse = :adresse, code_postal = :code_postal,
+    ville = :ville, telephone= :telephone,  email= :email, admin= :admin, WHERE id=".$client->id();
     $query= $db -> prepare ($sql);
 
     // bindvalue= valeur qui permet de remplacer un objet ds la requete
@@ -228,7 +236,7 @@ class profil_ClientModel extends Model {
     $db=parent::connect();
 
     if(is_string($data)){
-      $sql = "SELECT * FROM profil_client WHERE pseudo ='".$data."'";
+     $sql= "DELETE FROM profil_client WHERE id = ".$data;
       $query = $db->prepare($sql);
       $query ->execute();
       $listClient = $query->fetchAll();

@@ -51,6 +51,7 @@ body {
     /* box-shadow: #2ed573; */
     width: 100%;
     min-height: 20px;
+
 }
 
 
@@ -63,7 +64,8 @@ body {
     min-height: 7vh;
     width: 17vw;
     position: relative;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
+
 }
 
 .fenetre {
@@ -179,11 +181,13 @@ a.inscription_btn {
 
 .barre {
     min-height: 7vh;
-    width: 45vw;
-    /* border: 2px solid yellow; */
+    width: 270px;
+    border: 2px solid yellow;
     display: block;
     flex-wrap: wrap;
     margin-top: 3px;
+    /* margin-right: 25%; */
+
 }
 
 label {
@@ -200,16 +204,20 @@ label {
     font-size: .8em;
 }
 
-.site-search {
-    width: 20px;
+#site-search {
+    width: 180px;
 }
 
 .recherche {
-    width: 3vw;
+    width: 80px;
     background-color: #222f3e;
     margin-top: 2px;
     font-size: 24px;
-    border: none;
+    border:1px solid red;
+    position: absolute;
+    /* right: 320px; */
+
+
 }
 
 
@@ -353,19 +361,22 @@ a:hover {
 
 .row-container {
     display: flex;
-    background-image: url(./img/feuille.jpg);
-    background-size: cover;
-    padding-top: 118px;
+    /* background-image: url(./img/feuille.jpg); */
+    /* background-size: cover; */
+    padding-top: 120px;
     min-height: calc(100vh - 60px);
 }
 
 #box {
-    flex-basis: 30%;
+    flex-basis: 33%;
     margin-right: 48px;
+    height:550px;
+    border: 5px solid #2f3640;
+    border-radius:5%;
 }
 
 .coordonnees {
-    border: 2px solid yellow;
+
     justify-content: center;
     text-align: center;
     vertical-align: baseline;
@@ -373,20 +384,21 @@ a:hover {
 }
 
 .horaires {
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     text-align: center;
     font-size: 25px;
     color: white;
-    background-color: gray;
+    background-color:#2f3640;
+
 }
 
 .map-wrap {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 300px;
     margin: auto 0;
     position: relative;
-    margin: auto;
+  
 }
 
 .map {
@@ -810,3 +822,23 @@ th {
     margin-top: 7%;
 }
 
+/* media query */
+/* nav */
+@media all and (max-width: 700px){
+.barre{
+    /* margin-right: 40%; */
+}
+#site-search {
+    width: 140px;
+}
+
+.member-container{
+    margin-right: 130px;
+}
+}
+
+@media all and (max-width: 650px){
+.recherche{
+        display:none;
+    }
+}

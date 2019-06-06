@@ -34,6 +34,6 @@ btn_fermer.addEventListener("click", function () {
 
 //Ortho
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+// $(function () {
+//   $('[data-toggle="tooltip"]').tooltip()
+// })

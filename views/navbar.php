@@ -13,8 +13,8 @@
         <input type="search" id="site-search" name="q" placeholder="Recherche...">
       </label>
       <button class="recherche">🔍</button>
-    </div>
 
+    </div>
 
     <div class="member-container">
 
@@ -26,13 +26,26 @@
         </div>
 
         <div id="form_connect">
-          <form class="connexion" action="navbar.php" method="post">
+
+
+            <?php
+	if (isset($_SESSION['email'])){
+		echo	'<a class="deconnexion" href="/PHARMACIE/index.php/home">Deconnexion</a>';
+	}
+	else{
+
+echo'<form class="connexion" action="home" method="post">
             <label class="ok">Adresse email<br></label>
-              <input name="emailo" class="taille" type="email" placeholder="Email" />
+              <input name="email" class="taille" type="email" placeholder="Email" />
 
             <label class="ok">Mot de passe<br></label>
-              <input name="mdp" class="taille" type="password" placeholder="Mot de passe" /><br><br>
-              <input type="submit" name="se_connecter" value="Me connecter" class="connecter" href="/PHARMACIE/index.php/connexion" />
+              <input name="mdp" class="taille" type="password" placeholder="Mot de passe" /><br><br>';
+
+
+
+		echo	' <input type="submit" name="se_connecter" value="Me connecter" class="connecter" href="/PHARMACIE/index.php/home" />';
+	}
+	?>
             </form>
           </div>
 

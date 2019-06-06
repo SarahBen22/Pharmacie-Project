@@ -125,7 +125,7 @@ class professionnelsModel extends Model {
 					return '<p class="red">Il n a pas été ajouté.</p>';
 				}
 
-				$sql= "UPDATE ci SET id_categories_pro= :id_categories_pro, nom = :nom, prenom = :prenom, adresse = :adresse WHERE  id=".$pro->id();
+				$sql= "UPDATE pro SET id_categories_pro= :id_categories_pro, nom = :nom, prenom = :prenom, adresse = :adresse WHERE  id=".$pro->id();
 				$query= $db -> prepare ($sql);
         $query->bindValue(':id_categories_pro', $pro->id_categories_pro());
         $query->bindValue(':nom', $pro->nom());
@@ -153,7 +153,7 @@ class professionnelsModel extends Model {
 		  		$db=parent::connect();
 
 		  		if(is_int($data)){
-		  			$sql= "DELETE FROM commandes_item WHERE id = ".$data;
+		  			$sql= "DELETE FROM professionnels_sante WHERE id = ".$data;
 		  			$query= $db -> prepare ($sql);
 		  			$query -> execute ();
 

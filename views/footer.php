@@ -24,6 +24,7 @@
 
 <p class="margin_top"> Mentions légales</p>
  <a href="/PHARMACIE/index.php/contacts">Nous contacter</a>
+ <a href="/PHARMACIE/index.php/admin">Administrateurs</a>
 </div>
 </div>
 
