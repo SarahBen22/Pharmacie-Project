@@ -1,5 +1,11 @@
 <?php
-require_once "views/admin_navbar.php"
+require_once "views/admin_navbar.php";
+
+if (isset($action)){
+ echo '<script>';
+  echo 'console.log('. json_encode("debug"+ $action) .')';
+  echo '</script>';
+}
 ?>
 
 <div class="conteneur">
@@ -34,7 +40,7 @@ require_once "views/admin_navbar.php"
     </nav>
 
 
-<?php  if(true){?>
+
 <div class="sous_conteneur_deux">
 
 
@@ -77,7 +83,7 @@ require_once "views/admin_navbar.php"
 </div>
 </div>
 
-<?php } ?>
+
 <?php if($action=='addpro') { ?>
 <div class="add_pro">
 

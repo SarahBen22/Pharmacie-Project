@@ -51,12 +51,13 @@ class professionnelsModel extends Model {
 		return $profesioList;
 	}
 
-public function getByType (){
+public function getByType (String $type){
 
 		$db=parent::connect();
 
 		$sql = "select * from professionnels_sante
-		LEFT JOIN categories_pro on professionnels_sante.id_categories_pro = categories_pro.id ";
+		LEFT JOIN categories_pro on professionnels_sante.id_categories_pro = categories_pro.id
+		Where categories_pro.type='".$type."'";
 		$query = $db -> prepare($sql);
 		$query -> execute();
 		$profeList= $query -> fetchAll();

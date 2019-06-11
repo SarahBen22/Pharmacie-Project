@@ -6,48 +6,40 @@ require_once "navbar.php"
 
 <div class="infirmieres">
 
-<div class="div_names"><h2>Infirmiers\ières</h2></div>
 
-<table id="inf">
+ <?php foreach($catoList as $categorie){
 
-<tr>
-<td class="ligne_trois" >Nom</td>
-<td class="ligne_quatre" >Prénom</td>
-<td class="ligne_quatre" >Adresse</td>
-<td class="ligne_quatre">Numéro de téléphone</td>
-<td class="ligne_quatre">Email</td>
-</tr>
+$proList=$professionnels-> getByType($categorie['type']);
 
-</table>
-</div>
-<div class="medecins">
-  <div class="div_names"><h2>Médecins généralistes</h2></div>
-  <table id="med">
+if ( !empty($proList)){echo'
+
+  <div class="div_names"><h2>'.$categorie['type'].'</h2></div>
+ <table id="inf">
 
 <tr>
-<td class="ligne_trois" >Nom</td>
-<td class="ligne_quatre" >Prénom</td>
-<td class="ligne_quatre" >Adresse</td>
-<td class="ligne_quatre">Numéro de téléphone</td>
-<td class="ligne_quatre">Email</td>
-</tr>
-
-</table>
-</div>
-<div class="specialistes">
-  <div class="div_names"><h2>Spécialistes</h2></div>
-  <table id="spec">
-
+<th class="ligne_trois" >Nom</th>
+<th class="ligne_quatre" >Prénom</th>
+<th class="ligne_quatre" >Adresse</th>
+<th class="ligne_quatre">Numéro de téléphone</th>
+<th class="ligne_quatre">Email</th>
+</tr>';
+//le if = si les catégories sont vides on ne les fait pas apparaître
+//.$categorie['type']. = pour recupérer le nom de la catégorie
+// il y a 2 foreach car on ajoute un tableau pour chaque catégorie ds ce tableau il y a une ligne par professionnel
+foreach($proList as $pros){echo'
 <tr>
-<td class="ligne_trois" >Nom</td>
-<td class="ligne_quatre" >Prénom</td>
-<td class="ligne_quatre" >Adresse</td>
-<td class="ligne_quatre">Numéro de téléphone</td>
-<td class="ligne_quatre">Email</td>
-</tr>
+<td class="ligne_trois">'.$pros['nom'].'</td>
+<td class="ligne_quatre">'.$pros['prenom'].'</td>
+<td class="ligne_quatre">'.$pros['adresse'].'</td>
+<td class="ligne_quatre">'.$pros['telephone'].'</td>
+<td class="ligne_quatre">'.$pros['email'].'</td>
+</tr>';}
 
-</table>
+echo'</table>';}}
+?>
+
 </div>
+
 <div class="autres">
   <h5 class="informations_utiles">Informations utiles:</h5>
   <ul>

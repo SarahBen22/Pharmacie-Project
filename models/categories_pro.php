@@ -45,6 +45,7 @@ class Categories_proModel extends Model {
 	}
 
 
+	
 	// GETTERS //
 	  public function id() { return $this->id; }
 	  public function type() { return $this->type; }
