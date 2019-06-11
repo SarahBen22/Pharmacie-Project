@@ -6,15 +6,20 @@ require_once "navbar.php"
   <h1 class="or">Orthopédie et matériel médical</h1>
   <div class="img_ortho"></div>
 
+<div class="renseignements">
+  <p><strong>Pour plus d'informations -></strong><a href="https://mon-materiel-medical-en-pharmacie.fr/" id="renseignements">https://mon-materiel-medical-en-pharmacie.fr/</a></p>
+</div>
   <div class="one">
     <div class="couchage">
       <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title=" Chambre, prévention et position">
       Couchage
       </button>
+
+
     </div>
 
     <div class="transfert">
-      <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Aide au transfert,cannes et accessoires,cadres de marche et accessoires<br>fauteuils roulants,etc">
+      <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Aide au transfert,cannes et accessoires,cadres de marche et accessoires,fauteuils roulants,etc">
       Transfert
       </button>
     </div>
@@ -44,6 +49,8 @@ require_once "navbar.php"
     Puériculture
     </button>
   </div>
+
+
 </div>
 
 

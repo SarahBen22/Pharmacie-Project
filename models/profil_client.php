@@ -80,7 +80,7 @@ class profil_ClientModel extends Model {
         return $this;
       }
       else{
-echo'test3';
+
         // On enregistre les valeurs dans l'objet actuel pour pouvoir renvoyer mon objet à la ligne 96
         $this->setId($profil_client['id']);
         $this->setNom($profil_client['nom']);
@@ -97,7 +97,7 @@ echo'test3';
 
 
       }
-    
+
     }
 
 

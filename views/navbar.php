@@ -2,7 +2,7 @@
 
   <div class="logo"></div>
   <div class="nom">
-    <a href="/PHARMACIE/index.php" class="pharmacie_titre"><h1> Pharmacie de la Mairie</h1></a>
+    <a href="/PHARMACIE/index.php/home" class="pharmacie_titre"><h1> Pharmacie de la Mairie</h1></a>
   </div>
   </div>
 

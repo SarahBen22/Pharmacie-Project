@@ -46,11 +46,23 @@ class professionnelsModel extends Model {
 		LEFT JOIN categories_pro on professionnels_sante.id_categories_pro = categories_pro.id ";
 		$query = $db -> prepare($sql);
 		$query -> execute();
-		$panierList= $query -> fetchAll();
+		$profesioList= $query -> fetchAll();
 
-		return $panierList;
+		return $profesioList;
 	}
 
+public function getByType (){
+
+		$db=parent::connect();
+
+		$sql = "select * from professionnels_sante
+		LEFT JOIN categories_pro on professionnels_sante.id_categories_pro = categories_pro.id ";
+		$query = $db -> prepare($sql);
+		$query -> execute();
+		$profeList= $query -> fetchAll();
+
+		return $profeList;
+	}
 	// GETTERS //
 		public function id() { return $this->id; }
 	  public function id_categories_pro() { return $this->id_categories_pro; }
