@@ -1,9 +1,7 @@
-<?php
-$content = "views/admin_professionnels.php";
+<?php $content = "views/admin_professionnels.php";
 
 require_once "models/professionnels.php";
 global $action;
-
 
   if (isset($_POST['nom'])) {
 
@@ -24,13 +22,10 @@ $pros= new professionnelsModel(['id' => $_POST['id'] ,'nom' => htmlspecialchars(
   }
 }
 
-
 $pros= new professionnelsModel(['id' =>0,'nom' => '','prenom' =>'',
     'adresse' =>'','telephone' =>'','id_categories_pro' =>0,'email' =>'']);
 
 $prosList=$pros->getAll();//récup les données ds la bdd
 
 
-require_once "views/admin_layout.php";
-
-?>
+require_once "views/admin_layout.php";?>

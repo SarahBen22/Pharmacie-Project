@@ -24,7 +24,8 @@
 
 <p class="margin_top"> Mentions légales</p>
  <a href="/PHARMACIE/index.php/contacts">Nous contacter</a>
- <a href="/PHARMACIE/index.php/admin">Administrateurs</a>
+ <?php if (isset($_SESSION['admin']) && $_SESSION['admin']==1) echo'<a href="/PHARMACIE/index.php/admin">Administrateurs</a>';?>
+<!-- double condition: 1 si la variable $_SESSION admin est définis et la 2: si admin=1 ds la BDD -->
 </div>
 </div>
 

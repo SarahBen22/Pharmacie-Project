@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  sam. 01 juin 2019 à 17:33
+-- Généré le :  Dim 16 juin 2019 à 18:59
 -- Version du serveur :  5.7.11
 -- Version de PHP :  7.2.7
 
@@ -62,8 +62,8 @@ CREATE TABLE `categories_pro` (
 --
 
 INSERT INTO `categories_pro` (`id`, `type`) VALUES
-(1, 'infirmière'),
-(2, 'medecin generaliste'),
+(1, 'Infirmière'),
+(2, 'Médecin généraliste'),
 (3, 'Ostéopathe'),
 (4, 'Dentiste'),
 (5, 'ORL'),
@@ -139,8 +139,7 @@ INSERT INTO `professionnels_sante` (`id`, `id_categories_pro`, `nom`, `prenom`, 
 (13, 2, 'Saldanha Gomes', 'Cécilia', '4 Rue de l\'Entente, 91200 Athis-Mons', '0185742990', ''),
 (14, 2, 'Cohen', 'Gérard', '61 Bis rue Mutualité, 91200 Athis-Mons', '0169383838', ''),
 (15, 2, 'Cachin', 'Jean-Charles', '131 av 18 avril, 91200 Athis-Mons', '0169388871', ''),
-(16, 2, 'Dubois', 'Pierre', '4 rue l\'entente, 91200 Athis-Mons\r\n', '0185742990', ''),
-(17, 2, '', '', '', '', '');
+(16, 2, 'Dubois', 'Pierre', '4 rue l\'entente, 91200 Athis-Mons\r\n', '0185742990', '');
 
 -- --------------------------------------------------------
 
@@ -153,9 +152,11 @@ CREATE TABLE `profil_client` (
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
   `adresse` varchar(50) NOT NULL,
+  `code_postal` int(5) NOT NULL,
+  `ville` varchar(50) NOT NULL,
   `telephone` varchar(11) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `mot_de_passe` varchar(4) NOT NULL,
+  `mot_de_passe` varchar(255) NOT NULL,
   `admin` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -163,8 +164,11 @@ CREATE TABLE `profil_client` (
 -- Déchargement des données de la table `profil_client`
 --
 
-INSERT INTO `profil_client` (`id`, `nom`, `prenom`, `adresse`, `telephone`, `email`, `mot_de_passe`, `admin`) VALUES
-(1, 'dupont', 'maria', '', '0', 'mardup@test.com', 'jpp', 0);
+INSERT INTO `profil_client` (`id`, `nom`, `prenom`, `adresse`, `code_postal`, `ville`, `telephone`, `email`, `mot_de_passe`, `admin`) VALUES
+(1, 'dupont', 'maria', '13 allee du je ne sais pas pk  ', 77090, 'Foreach', '0129384857', 'mardup@test.com', 'jpp', 0),
+(2, 'bizarre', 'guigui', '1 rue de la faim', 0, '', '1313131313', 'guigui@email.com', 'roro', 1),
+(3, 'Targaryen', 'Daenerys', '1 rue du Nord', 91200, 'Westeros', '196838421', 'dany.targ@gmail.com', '$2y$10$8NIpyKvJfiN2mfJsQKip6ujg5hLDfPdZ6lYdyNBDWSrlyoEIFv8W.', 0),
+(4, 'stark', 'arya', '12 avenue aiguille', 77190, 'dome', '0680381957', 'stark.arya@email.com', '$2y$10$QZVVSyS.3FaAemK/VOHzM.MJvk4QYvntY96rlEUf1eFbMsz23gkJu', 0);
 
 --
 -- Index pour les tables déchargées
@@ -235,7 +239,7 @@ ALTER TABLE `produits`
 -- AUTO_INCREMENT pour la table `profil_client`
 --
 ALTER TABLE `profil_client`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Contraintes pour les tables déchargées

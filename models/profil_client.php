@@ -70,7 +70,7 @@ class profil_ClientModel extends Model {
     $profil_client= $query -> fetch();
 
     if (empty($profil_client)){
-      $sql= "select * from profil_client WHERE nom= '".$data."'";
+      $sql= "select * from profil_client WHERE id= '".$data."'";
       $query = $db -> prepare($sql);
       $query -> execute();
       $profil_client= $query -> fetch();
@@ -79,10 +79,11 @@ class profil_ClientModel extends Model {
 
         return $this;
       }
-      else{
 
-        // On enregistre les valeurs dans l'objet actuel pour pouvoir renvoyer mon objet à la ligne 96
-        $this->setId($profil_client['id']);
+// s'il y a bien un résultat, on remplis les champs de l'objet
+      }
+      if($profil_client && $profil_client['email']){
+       $this->setId($profil_client['id']);
         $this->setNom($profil_client['nom']);
         $this->setPrenom($profil_client['prenom']);
         $this->setAdresse($profil_client['adresse']);
@@ -93,16 +94,15 @@ class profil_ClientModel extends Model {
         $this->setMot_de_passe($profil_client['mot_de_passe']);
         $this->setAdmin($profil_client['admin']);
         // $this->setAdmin($profil_client['admin']);
+        }
         return $this;
 
-
-      }
 
     }
 
 
 
-  }
+
   public function getAll(){
 
 
@@ -150,9 +150,9 @@ class profil_ClientModel extends Model {
   }
 
   public function setPrenom( $prenom ){
-    if(is_string($prenom)){
+    // if(is_string($prenom)){
       $this->prenom = $prenom;
-    }
+    // }
   }
 
 
@@ -236,7 +236,7 @@ class profil_ClientModel extends Model {
     $db=parent::connect();
 
     if(is_string($data)){
-     $sql= "DELETE FROM profil_client WHERE id = ".$data;
+     $sql= "SELECT FROM profil_client WHERE id = ".$data;
       $query = $db->prepare($sql);
       $query ->execute();
       $listClient = $query->fetchAll();

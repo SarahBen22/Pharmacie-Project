@@ -89,7 +89,7 @@ if (isset($action)){
 
 <h2 class="add">Ajouter un professionnel</h2>
 
-<form>
+<form action="admin_professionnel" method="POST">
 
 <br><br>
 <label>Catégories</label><br><br>

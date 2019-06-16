@@ -83,7 +83,7 @@ require_once "views/admin_navbar.php"
 
 <h2 class="add">Ajouter un produit</h2>
 
-<form>
+<form action="admin_produits" method="POST">
 <label for="Nom_prod">Nom du produit</label><br><br>
 <input type="text" placeholder="Nom du produit" size="30" />
 

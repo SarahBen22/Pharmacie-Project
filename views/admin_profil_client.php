@@ -37,7 +37,7 @@ require_once "views/admin_navbar.php"
     </nav>
 
 
-    <?php global $action; echo $action; if(true){?>
+    <?php if(empty($action)){?>
     <div class="sous_conteneur_trois">
 
  <a href="/PHARMACIE/index.php/admin_profil_client/addusers">
@@ -54,7 +54,7 @@ require_once "views/admin_navbar.php"
         <th>Ville</th>
         <th>téléphone</th>
         <th>Email</th>
-        <th>Mot de passe</th>
+        <!-- <th>Mot de passe</th> -->
         <th>Admin</th>
         <th>Editer</th>
         <th>Supprimer</th>
@@ -70,9 +70,9 @@ require_once "views/admin_navbar.php"
         <td>'.$user['ville'].'</td>
         <td>'.$user['telephone'].'</td>
         <td>'.$user['email'].'</td>
-        <td>'.$user['mot_de_passe'].'</td>
+
         <td>'.$user['admin'].'</td>
-        <td><center>✏️</center></td>
+        <td><center><a href="admin_profil_client/update_user/?id='.$user['id'].'">✏️</a></center></td>
         <td><center>❌</center></td>
       </tr>
 
@@ -84,50 +84,67 @@ require_once "views/admin_navbar.php"
  </div>
 </div>
 
-<?php } ?>
+<?php }
 
-<?php if($action=='addusers'){
+     else if($action=='addusers'|| $action=='update_user'){
 
 ?>
 <div class="add_pro">
 
 <h2 class="add">Ajouter un utilisateur</h2>
 
-<form>
+<form action="/PHARMACIE/index.php/admin_profil_client" method="POST">
 
 <br><br>
 <label for="Nom_pro">Nom</label><br><br>
-<input type="text" placeholder="Nom" size="30" />
+<input type="text" name="nom" placeholder="Nom" size="30" value=<?php echo '"'.$nom.'"';?> />
 
 <br><br>
 
 <label for="Prenom_pro">Prénom</label><br><br>
-<input type="text" placeholder="Prénom" size="30" />
+<input type="text" name="prenom"placeholder="Prénom" size="30" />
 
 <br><br>
 <label for="address_pro">Adresse</label><br><br>
-<input type="text" placeholder="Adresse" size="30" />
+<input type="text" name="adresse" placeholder="Adresse" size="30" />
+
+<br><br>
+<label>Code postal</label><br><br>
+<input type="text" name="code_postal" placeholder="Code postal" size="30" />
+
+<br><br>
+<label>Ville</label><br><br>
+<input type="text" name="ville" placeholder="ville" size="30" />
 
 <br><br>
 <label>Numéro de téléphone</label><br><br>
-<input type="text" placeholder="Adresse" size="30" />
+<input type="text" name="telephone" placeholder="Adresse" size="30" />
+
+
 
 <br><br>
 <label>Email</label><br><br>
-<input type="email" placeholder="email" size="30" />
+<input type="email" name="email" placeholder="email" size="30" />
 
 <br><br>
 <label>Mot de passe</label><br><br>
-<input type="password" placeholder="mot de passe" size="30" />
+<input type="password" name="mdp" placeholder="mot de passe" size="30" />
 
 <br><br>
 <label>Administrateur </label>
-<input type="radio" name="choix" value="Oui" checked="checked" /> Oui
-<input type="radio" name="choix" value="Non" /> Non
 
+<input type="radio" name="admin" value="Oui" checked="checked" /> Oui
+<input type="radio" name="admin" value="Non" /> Non
+
+<br>
+<?php if($action == 'adduser'){//bouton pour l affichage du formulaire lorsque l'on ajoute un client
+    echo '<button type="submit" class="btn btn-secondary" name="addprofil" class="bout" >Ajouter</button>';
+  }
+  else if($action == 'update_user'){//bouton pour l affichage du formulaire lorsque l'on modifie un client
+    echo '<button type="submit" class="btn btn-secondary" name="updateprofil" class="mod" >Modifier</button>';
+  }?>
 
 </form>
-<br>
-<button type="button" class="btn btn-secondary" name="addproduct" class="bout" >Ajouter</button>
+
 </div>
 <?php } ?>

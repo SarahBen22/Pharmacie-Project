@@ -39,7 +39,7 @@ require_once "views/admin_navbar.php"
 
 <div class="conteneur_deux">
 <div class="admin_name">
-  <p class="hi"> Welcome ADMIN !</p>
+  <p class="hi"> Welcome <?php echo $_SESSION['prenom']; ?>!</p>
 </div>
 
 <div class="acces_spaces">

@@ -47,7 +47,7 @@
 
 <label>&emsp;Mot de passe</label>
 <input name="mot_de_passe" type="password" placeholder="mot de passe" size="40" class="nom_insc"/>
- 
+
 </div>
 
 <button type="submit" id="enregistrer_btn" name="inscription" value="Enregistrer" >Enregistrer</button>
@@ -57,7 +57,7 @@
 
 <div class="msg">
 	<?php
-	if (isset($erreur)) echo '<br />'.$erreur;//
+	if ($erreur!=0) echo '<br />'.$erreur;//
 	?>
 	</div>
 

@@ -5,6 +5,4 @@
     header('Location: ./home');
     exit();
 
-
-require_once "views/layout.php";
     ?>

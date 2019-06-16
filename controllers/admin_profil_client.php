@@ -1,25 +1,58 @@
 <?php
 $content = "views/admin_profil_client.php";
 require_once "models/profil_client.php";
-global $action;
+global $action; echo $action;
+
+    $id=0;
+    $nom="";
+    $prenom="";
+    $adresse="";
+    $code_postal="";
+    $ville="";
+    $telephone="";
+    $email="";
+
 
 
   if (isset($_POST['email'])) {// on cherche à savoir si la pers a appuyé sur le bouton
+    //on teste si le bouton "ajouter" a bien été soumis
 
-$client= new profil_ClientModel(['id' => $_POST['id'] ,'nom' => htmlspecialchars($_POST['nom']),'prenom' =>  htmlspecialchars($_POST['prenom']),
-    'adresse' =>  htmlspecialchars($_POST['adresse']),'code_postal' =>  htmlspecialchars($_POST['code_postal']),'ville' =>  htmlspecialchars($_POST['ville']),'telephone' =>  htmlspecialchars($_POST['telephone']),'mot_de_passe' =>  htmlspecialchars($_POST['mot_de_passe']),'email' =>  htmlspecialchars($_POST['email']),'admin' => "0"]);
+$client= new profil_ClientModel([0, 'nom' => htmlspecialchars($_POST['nom']),'prenom' =>  htmlspecialchars($_POST['prenom']),
+    'adresse' =>  htmlspecialchars($_POST['adresse']),'code_postal' =>  htmlspecialchars($_POST['code_postal']),
+    'ville' =>  htmlspecialchars($_POST['ville']),'telephone' =>  htmlspecialchars($_POST['telephone']),
+    'mot_de_passe' =>  htmlspecialchars($_POST['mdp']),'email' =>  htmlspecialchars($_POST['email']),'admin' => "0"]);
 
   //htmlspecialchars= protection des données =SECURITE
+ if (isset($_POST['adduser'])){
+    $erreur= $client-> createOne($client);
+}
 
-    $erreur= $client-> create($client);
-
-    if ($erreur==0){
-    $_SESSION['email'] = $_POST['email'];
-
+else if(isset($_POST['update_user'])){$erreur= $client-> update($client);}
+if(isset($action) && $action == 'update_user'){
+  echo'ok';
+  if (isset($_GET['id'])){
+    echo'oui';
+    $client=$client->getByData($_GET['id']);
+    echo "jnklnlkn".$client->nom();
+    $id=$client->id();
+    $nom=$client->nom();
+    $prenom=$client->prenom();
+    $adresse=$client->adresse();
+    $code_postal=$client->code_postal();
+    $ville=$client->ville();
+    $telephone=$client->telephone();
+    $email=$client->email();
+    // $mot_de_passe=$client->mot_de_passe();
+    // $admin=$client->admin();
   }
-  else {
-    $erreur = 'Au moins un des champs est vide.';
-  }
+}
+  //   if ($erreur==0){
+
+
+  // }
+  // else {
+  //   $erreur = 'Au moins un des champs est vide.';
+  // }
 }
 
 

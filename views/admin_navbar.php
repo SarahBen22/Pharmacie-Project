@@ -20,32 +20,36 @@
 
   <div class="member-container">
 
+<button type="button" name="button" class="compte" id="btn_mon_compte">Mon compte</button>
 
-    <button type="button" name="button" class="compte">Mon compte</button>
-""
-    <div class="fenetre">
+      <div class="fenetre" id="fenetre">
+        <div class="member">
+          <p class="connect">Avez-vous déjà un compte?Connectez-vous!</p>
+        </div>
 
-    <div class="member">
-      <p class="connect">Avez-vous déjà un compte?Connectez-vous!</p>
-    </div>
+        <div id="form_connect">
 
 
-<div id="form_connect">
-  <form class="connexion" action="navbar.php" method="post">
+            <?php
+	if (isset($_SESSION['email'])){
+		echo	'<a class="deconnexion" href="/PHARMACIE/index.php/deconnexion">Deconnexion</a>';
+	}
+	else{
 
- <label class="ok">Adresse email
-   <br>
-    <input name="emailo" class="taille" type="email" placeholder="Email" />
-</label>
+echo'<form class="connexion" action="connexion" method="post">
+            <label class="ok">Adresse email<br></label>
+              <input name="email" class="taille" type="email" placeholder="Email" />
 
- <label class="ok">Mot de passe
-   <br>
-    <input name="mdp" class="taille" type="password" placeholder="Mot de passe" />
-  </label>
+            <label class="ok">Mot de passe<br></label>
+              <input name="mdp" class="taille" type="password" placeholder="Mot de passe" /><br><br>';
 
- <input type="submit" name="se_connecter" value="Me connecter" href="/PHARMACIE/index.php/connexion" />
-  </form>
-</div>
+
+
+		echo	' <input type="submit" name="se_connecter" value="Me connecter" class="connecter" href="/PHARMACIE/index.php/home" />';
+	}
+	?>
+            </form>
+          </div>
 
 <div class="creation">
   <p id="no_compte" >Pas de compte?<br>Inscrivez-vous!</p>

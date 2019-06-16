@@ -74,7 +74,7 @@ require_once "views/admin_navbar.php"
 
 <h2 class="add">Ajouter une catégorie</h2>
 
-<form>
+<form action="admin_categories" methode="POST">
 
 
 <br><br>
@@ -133,7 +133,7 @@ require_once "views/admin_navbar.php"
 
 <h2 class="add">Ajouter une catégorie professionnelle</h2>
 
-<form>
+<form action="admin_" method="POST">
 
 
 <br><br>
