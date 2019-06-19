@@ -33,7 +33,7 @@ require_once "views/admin_navbar.php"
         </ul>
     </nav>
 
-<?php global $action; echo $action; if(true){?>
+ <?php if(empty($action)){?>
     <div class="sous_conteneur_un">
 
   <a href="/PHARMACIE/index.php/admin_produits/addproduct">
@@ -60,7 +60,7 @@ require_once "views/admin_navbar.php"
         <td>'.$prod['type'].'</td>
         <td>'.$prod['prix'].'</td>
         <td>'.$prod['image_produit'].'</td>
-        <td><center>✏️</center></td>
+        <td><center><a href="admin_produits/update_prod/?id='.$prod['id'].'">✏️</a></center></td>
         <td><center>❌</center></td>
       </tr>
 
@@ -73,9 +73,9 @@ require_once "views/admin_navbar.php"
 
     </div>
 </div>
-<?php } ?>
+<?php }
 
-<?php if($action=='addproduct'){
+else if($action=='addproduct'|| $action=='update_prod'){
 
 ?>
 
@@ -107,8 +107,16 @@ require_once "views/admin_navbar.php"
 <br><br>
 <label>Image du produit</label><br><br>
 <input name="upload" type="file" size="30" />
+
+<br><br><br>
+
+<?php if($action == 'addproduct'){//bouton pour l affichage du formulaire lorsque l'on ajoute un client
+    echo '<button type="submit" class="btn btn-secondary" name="addprod" class="bout" >Ajouter</button>';
+  }
+  else if($action == 'update_prod'){//bouton pour l affichage du formulaire lorsque l'on modifie un client
+    echo '<button type="submit" class="btn btn-secondary" name="updateprod" class="mod" >Modifier</button>';
+  }?>
 </form>
-<br>
-<button type="button" class="btn btn-secondary" name="addproduct" class="bout" >Ajouter</button>
+
 </div>
 <?php } ?>

@@ -65,7 +65,7 @@ class profil_ClientModel extends Model {
 // pour trouver l objet avc le nom
     $sql= "select * from profil_client WHERE email= :email";
     $query = $db -> prepare($sql);
-    $query->bindValue(':email', $data);
+    $query->bindValue(':email', $data);//bienvalue= protection contre les injections sql
     $query -> execute();
     $profil_client= $query -> fetch();
 
@@ -235,7 +235,7 @@ class profil_ClientModel extends Model {
   public function exists($data){
     $db=parent::connect();
 
-    if(is_string($data)){
+    if(is_int($data)){
      $sql= "SELECT FROM profil_client WHERE id = ".$data;
       $query = $db->prepare($sql);
       $query ->execute();
@@ -251,8 +251,9 @@ class profil_ClientModel extends Model {
   public function delete($data){
 
     $db=parent::connect();
-
+    echo'delete toi';
     if(is_int($data)){
+      echo'je delete';
       $sql= "DELETE FROM profil_client WHERE id = ".$data;
       $query= $db -> prepare ($sql);
       $query -> execute ();

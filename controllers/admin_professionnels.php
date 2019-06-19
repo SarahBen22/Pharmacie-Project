@@ -1,7 +1,17 @@
-<?php $content = "views/admin_professionnels.php";
-
+<?php
+$content = "views/admin_professionnels.php";
 require_once "models/professionnels.php";
 global $action;
+    $id=0;
+    $id_categories_pro=0;
+    $nom="";
+    $prenom="";
+    $adresse="";
+    $telephone="";
+    $email="";
+
+
+
 
   if (isset($_POST['nom'])) {
 
@@ -11,8 +21,9 @@ $pros= new professionnelsModel(['id' => $_POST['id'] ,'nom' => htmlspecialchars(
   //   //htmlspecialchars= protection des données =SECURITE
 //$_Post = pour ajouter les données du formulaire ds la bdd
 //quand on valide le form = create mais quand on ne le valide pas on affiche la list
-    $erreur= $pros-> create($pros);
-
+ if (isset($_POST['addpro'])){
+$erreur= $pros-> create($pros);
+}
     if ($erreur==0){
     $_SESSION['nom'] = $_POST['nom'];
 

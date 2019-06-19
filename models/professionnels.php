@@ -43,7 +43,7 @@ class professionnelsModel extends Model {
 		$db=parent::connect();
 
 		$sql = "select * from professionnels_sante
-		LEFT JOIN categories_pro on professionnels_sante.id_categories_pro = categories_pro.id ";
+		INNER JOIN categories_pro on professionnels_sante.id_categories_pro = categories_pro.id ";
 		$query = $db -> prepare($sql);
 		$query -> execute();
 		$profesioList= $query -> fetchAll();

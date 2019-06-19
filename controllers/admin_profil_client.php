@@ -1,7 +1,7 @@
 <?php
 $content = "views/admin_profil_client.php";
 require_once "models/profil_client.php";
-global $action; echo $action;
+global $action;
 
     $id=0;
     $nom="";
@@ -12,22 +12,41 @@ global $action; echo $action;
     $telephone="";
     $email="";
 
+$client= new profil_ClientModel(['id' =>0,'nom' => '','prenom' =>'',
+    'adresse' =>'', 'code_postal' =>0, 'ville' =>'','telephone' =>'','mot_de_passe' =>'','email' =>'','admin' => '']);
+
 
 
   if (isset($_POST['email'])) {// on cherche à savoir si la pers a appuyé sur le bouton
     //on teste si le bouton "ajouter" a bien été soumis
+
 
 $client= new profil_ClientModel([0, 'nom' => htmlspecialchars($_POST['nom']),'prenom' =>  htmlspecialchars($_POST['prenom']),
     'adresse' =>  htmlspecialchars($_POST['adresse']),'code_postal' =>  htmlspecialchars($_POST['code_postal']),
     'ville' =>  htmlspecialchars($_POST['ville']),'telephone' =>  htmlspecialchars($_POST['telephone']),
     'mot_de_passe' =>  htmlspecialchars($_POST['mdp']),'email' =>  htmlspecialchars($_POST['email']),'admin' => "0"]);
 
-  //htmlspecialchars= protection des données =SECURITE
+  //htmlspecialchars= protection des données =SECURITE remplace les caractère speciaux lors des injections
+  // par des caracteres html
  if (isset($_POST['adduser'])){
     $erreur= $client-> createOne($client);
+
 }
 
-else if(isset($_POST['update_user'])){$erreur= $client-> update($client);}
+else if(isset($_POST['update_user'])){
+  $erreur= $client-> update($client);
+}
+
+
+  //   if ($erreur==0){
+
+
+  // }
+  // else {
+  //   $erreur = 'Au moins un des champs est vide.';
+  // }
+}
+
 if(isset($action) && $action == 'update_user'){
   echo'ok';
   if (isset($_GET['id'])){
@@ -46,18 +65,12 @@ if(isset($action) && $action == 'update_user'){
     // $admin=$client->admin();
   }
 }
-  //   if ($erreur==0){
 
+else if(isset($action) && $action == 'delete_user'){
 
-  // }
-  // else {
-  //   $erreur = 'Au moins un des champs est vide.';
-  // }
+  $erreur= $client->delete((int)$_GET['id']);
+  echo'supprime toi';
 }
-
-
-$client= new profil_ClientModel(['id' =>0,'nom' => '','prenom' =>'',
-    'adresse' =>'', 'code_postal' =>0, 'ville' =>'','telephone' =>'','mot_de_passe' =>'','email' =>'','admin' => '']);
 
 $usersList=$client->getAll();//récup les données ds la bdd
 //  foreach($usersList as $client){echo $client['nom'];}

@@ -32,7 +32,7 @@ require_once "views/admin_navbar.php"
 
         </ul>
     </nav>
-<?php global $action; echo $action; if(true){?>
+ <?php if(empty($action)){?>
     <div class="sous_conteneur_quatre">
       <a href="/PHARMACIE/index.php/admin_categories/addcat">
   <button type="button" class="btn btn-secondary" name="addproduct" id="addcat">Ajouter une Catégorie</button></a><br><br>
@@ -53,7 +53,7 @@ require_once "views/admin_navbar.php"
       <?php foreach($catList as $cat){echo'
       <tr>
         <td>'.$cat['type'].'</td>
-        <td><center>✏️</center></td>
+        <td><center><a href="admin_produits/update_cat/?id='.$cat['id'].'">✏️</a></center></td>
         <td><center>❌</center></td>
       </tr>
 
@@ -64,9 +64,9 @@ require_once "views/admin_navbar.php"
   </table>
 </div>
     </div>
-<?php } ?>
+<?php }
 
-<?php if($action=='addcat'){
+else if($action=='addcat'|| $action=='update_cat'){
 
 ?>
 
@@ -74,7 +74,7 @@ require_once "views/admin_navbar.php"
 
 <h2 class="add">Ajouter une catégorie</h2>
 
-<form action="admin_categories" methode="POST">
+<form action="/PHARMACIE/index.php/admin_categorie" methode="POST">
 
 
 <br><br>
@@ -93,7 +93,7 @@ require_once "views/admin_navbar.php"
 
 
 
-<?php global $action; echo $action; if(true){?>
+<?php if(empty($action)){?>
      <div class="sous_conteneur_cinq">
        <a href="/PHARMACIE/index.php/admin_categories/addcatpro">
   <button type="button" class="btn btn-secondary" name="addproduct" id="addcatpro">Ajouter une Catégorie Professionnelle</button></a><br><br>
@@ -113,7 +113,7 @@ require_once "views/admin_navbar.php"
       <?php foreach($catproList as $catpro){echo'
       <tr>
         <td>'.$catpro['type'].'</td>
-        <td><center>✏️</center></td>
+        <td><center><a href="admin_produits/update_cat_pro/?id='.$catpro['id'].'">✏️</a></center></td>
         <td><center>❌</center></td>
       </tr>
 
@@ -124,16 +124,16 @@ require_once "views/admin_navbar.php"
 </div>
      </div>
 </div>
-<?php } ?>
+<?php }
 
-<?php if($action=='addcatpro'){
+else if($action=='addcatpro' || $action=='update_cat_pro'){
 
 ?>
 <div class="add_cat">
 
 <h2 class="add">Ajouter une catégorie professionnelle</h2>
 
-<form action="admin_" method="POST">
+<form action="/PHARMACIE/index.php/admin_categories" method="POST">
 
 
 <br><br>

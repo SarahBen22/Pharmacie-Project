@@ -40,7 +40,7 @@ if (isset($action)){
     </nav>
 
 
-
+<?php if(empty($action)){?>
 <div class="sous_conteneur_deux">
 
 
@@ -70,7 +70,7 @@ if (isset($action)){
         <td>'.$pros['adresse'].'</td>
         <td>'.$pros['telephone'].'</td>
         <td>'.$pros['email'].'</td>
-        <td><center>✏️</center></td>
+        <td><center><a href="admin_professionnel/update_pro/?id='.$pros['id'].'">✏️</center></a></td>
         <td><center>❌</center></td>
       </tr>
 
@@ -83,13 +83,15 @@ if (isset($action)){
 </div>
 </div>
 
+<?php }
 
-<?php if($action=='addpro') { ?>
+else if($action=='addpro' || $action=='update_pro') {
+  ?>
 <div class="add_pro">
 
 <h2 class="add">Ajouter un professionnel</h2>
 
-<form action="admin_professionnel" method="POST">
+<form action="/PHARMACIE/index.php/admin_professionnels" method="POST">
 
 <br><br>
 <label>Catégories</label><br><br>
@@ -125,9 +127,16 @@ if (isset($action)){
 <label>Email</label><br><br>
 <input type="email" placeholder="email" size="30" />
 
+<br><br><br>
 
+<?php if($action == 'addpro'){//bouton pour l affichage du formulaire lorsque l'on ajoute un client
+    echo '<button type="submit" class="btn btn-secondary" name="addpro" class="bout" >Ajouter</button>';
+  }
+  else if($action == 'update_pro'){//bouton pour l affichage du formulaire lorsque l'on modifie un client
+    echo '<button type="submit" class="btn btn-secondary" name="update_pro" class="mod" >Modifier</button>';
+  }?>
 </form>
-<br>
-<button type="button" class="btn btn-secondary" name="addproduct" class="bout" >Ajouter</button>
+
+
 </div>
 <?php } ?>

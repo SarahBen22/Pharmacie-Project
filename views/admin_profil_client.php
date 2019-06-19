@@ -1,6 +1,5 @@
 <?php
 require_once "views/admin_navbar.php"
-
 ?>
 
 
@@ -37,11 +36,11 @@ require_once "views/admin_navbar.php"
     </nav>
 
 
-    <?php if(empty($action)){?>
+    <?php if(empty($action )|| $action=='delete_user'){?>
     <div class="sous_conteneur_trois">
 
- <a href="/PHARMACIE/index.php/admin_profil_client/addusers">
-  <button type="button" class="btn btn-secondary" name="addproduct" id="addusers">Ajouter un Utilisateur</button></a><br><br>
+ <a href="/PHARMACIE/index.php/admin_profil_client/adduser">
+  <button type="button" class="btn btn-secondary" name="addproduct" id="adduser">Ajouter un Utilisateur</button></a><br><br>
 
 <div class="container" id="table_pro">
   <table class="table table-dark table-striped">
@@ -70,12 +69,10 @@ require_once "views/admin_navbar.php"
         <td>'.$user['ville'].'</td>
         <td>'.$user['telephone'].'</td>
         <td>'.$user['email'].'</td>
-
         <td>'.$user['admin'].'</td>
-        <td><center><a href="admin_profil_client/update_user/?id='.$user['id'].'">✏️</a></center></td>
-        <td><center>❌</center></td>
+        <td><center><a href="/PHARMACIE/index.php/admin_profil_client/update_user/?id='.$user['id'].'">✏️</a></center></td>
+        <td><center><a href="/PHARMACIE/index.php/admin_profil_client/delete_user/?id='.$user['id'].'">❌</a></center></td>
       </tr>
-
       ';
       }?>
     </tbody>
@@ -85,9 +82,7 @@ require_once "views/admin_navbar.php"
 </div>
 
 <?php }
-
-     else if($action=='addusers'|| $action=='update_user'){
-
+     else if($action=='adduser'|| $action=='update_user'){
 ?>
 <div class="add_pro">
 
@@ -97,34 +92,34 @@ require_once "views/admin_navbar.php"
 
 <br><br>
 <label for="Nom_pro">Nom</label><br><br>
-<input type="text" name="nom" placeholder="Nom" size="30" value=<?php echo '"'.$nom.'"';?> />
+<input type="text" name="nom" placeholder="Nom" size="30" value="<?php echo $nom; ?>" />
 
 <br><br>
 
 <label for="Prenom_pro">Prénom</label><br><br>
-<input type="text" name="prenom"placeholder="Prénom" size="30" />
+<input type="text" name="prenom"placeholder="Prénom" size="30" value="<?php echo $prenom; ?>" />
 
 <br><br>
 <label for="address_pro">Adresse</label><br><br>
-<input type="text" name="adresse" placeholder="Adresse" size="30" />
+<input type="text" name="adresse" placeholder="Adresse" size="30" value="<?php echo $adresse; ?>"/>
 
 <br><br>
 <label>Code postal</label><br><br>
-<input type="text" name="code_postal" placeholder="Code postal" size="30" />
+<input type="text" name="code_postal" placeholder="Code postal" size="30" value="<?php echo $code_postal; ?>"/>
 
 <br><br>
 <label>Ville</label><br><br>
-<input type="text" name="ville" placeholder="ville" size="30" />
+<input type="text" name="ville" placeholder="ville" size="30"value="<?php echo $ville; ?>" />
 
 <br><br>
 <label>Numéro de téléphone</label><br><br>
-<input type="text" name="telephone" placeholder="Adresse" size="30" />
+<input type="text" name="telephone" placeholder="Adresse" size="30"value="<?php echo $telephone; ?>" />
 
 
 
 <br><br>
 <label>Email</label><br><br>
-<input type="email" name="email" placeholder="email" size="30" />
+<input type="email" name="email" placeholder="email" size="30" value="<?php echo $email; ?>" />
 
 <br><br>
 <label>Mot de passe</label><br><br>
@@ -133,15 +128,15 @@ require_once "views/admin_navbar.php"
 <br><br>
 <label>Administrateur </label>
 
-<input type="radio" name="admin" value="Oui" checked="checked" /> Oui
+<input type="radio" name="admin" value="Oui" checked="checked"  /> Oui
 <input type="radio" name="admin" value="Non" /> Non
 
 <br>
 <?php if($action == 'adduser'){//bouton pour l affichage du formulaire lorsque l'on ajoute un client
-    echo '<button type="submit" class="btn btn-secondary" name="addprofil" class="bout" >Ajouter</button>';
+    echo '<button type="submit" class="btn btn-secondary" name="adduser" class="bout" >Ajouter</button>';
   }
   else if($action == 'update_user'){//bouton pour l affichage du formulaire lorsque l'on modifie un client
-    echo '<button type="submit" class="btn btn-secondary" name="updateprofil" class="mod" >Modifier</button>';
+    echo '<button type="submit" class="btn btn-secondary" name="update_user" class="mod" >Modifier</button>';
   }?>
 
 </form>

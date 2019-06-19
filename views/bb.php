@@ -5,6 +5,7 @@ require_once "navbar.php"
 
 <div class="univ_bebe">
   <h3 class="titre">Bébé</h3>
+  <p>&emsp;Information:<br><strong>Garde Bronchiolite Essonne:0 810 817 812</strong></p>
    <p>Vous trouverez ci-dessous la liste des produits que l'on peut trouver en pharmacie pour les bébés</p>
 <div class="img_bebe"></div>
   <h4 class="sous-titre">Bien-être et confort</h4>
@@ -16,6 +17,15 @@ require_once "navbar.php"
     _Bouillote avec housse polaire/ou classique<br>
     _Matelas pour berceau<br>
     _Berceau de bébé</p>
+
+     <h4 class="sous-titre">Hygiène</h4>
+  <p class="mom_text"> Les produits d'hygiène sont:<br>
+    _lingettes<br>
+    _liniment<br>
+    _gel douche corps et cheveux<br>
+    _couches<br>
+
+
 
 
   <h4 class="sous-titre">Diagnostic et surveillance</h4>

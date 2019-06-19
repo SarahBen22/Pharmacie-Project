@@ -186,7 +186,8 @@ a.inscription_btn {
     display: block;
     flex-wrap: wrap;
     margin-top: 3px;
-    /* margin-right: 25%; */
+
+    margin-right: 25%;
 
 }
 
@@ -546,11 +547,11 @@ th {
 }
 
 .ligne_une {
-    background-color: #f78fb3;
+    background-color: #9AECDB;
 }
 
 .ligne_deux {
-    background-color: #f8a5c2;
+    background-color: #218c74;
 }
 
 
@@ -640,6 +641,18 @@ th {
     background-color: #f1f2f6;
 }
 
+.deconnexion{
+    font-size:15px;
+    margin-left:60px;
+    margin-top:80px;
+    color:darkslategrey;
+    font-weight: bold;
+}
+
+.deconnexion:hover{
+    text-decoration: none;
+    color:darkslategrey;
+}
 
 /*--------Page Inscription----------*/
 
@@ -863,27 +876,6 @@ a#renseignements:hover{
     margin-top: 7%;
 }
 
-/* media query */
-/* nav */
-@media all and (max-width: 700px){
-/* .barre{
-    /* margin-right: 40%; */
-/* } */
-#site-search {
-    width: 140px;
-}
-
-.member-container{
-    margin-right: 130px;
-}
-}
-
-@media all and (max-width: 650px){
-.recherche{
-        display:none;
-    }
-}
-
 /*--------Page Univers bébé----------*/
 
 .univ_bebe{
@@ -938,4 +930,58 @@ a#renseignements:hover{
 .titre{
     margin-top:20px;
     margin-left:5%;
+}
+
+/* media query */
+/* nav */
+@media all and (max-width: 700px){
+/* .barre{
+    /* margin-right: 40%; */
+/* } */
+#site-search {
+    width: 140px;
+}
+
+.member-container{
+    margin-right: 130px;
+}
+}
+
+@media all and (max-width: 650px){
+.recherche{
+        display:none;
+
+    }
+}
+
+@media all and (max-width: 1135px){
+    .univ_bebe{
+    /* border: 2px solid red; */
+}
+   .img_bebe{
+    /* background-image: url("img/bebe.jpg"); */
+    width:334px;
+    height:223px;
+    margin-left: 0 !important;
+
+
+}
+
+.img_mom{
+
+    width:334px;
+    height:223px;
+    margin-left:0 !important;
+
+}
+
+}
+
+@media all and (max-width: 1066px){
+
+    .carousel-inner{
+    margin-right: 0 !important;
+    margin-left:-35% !important;
+    border:2px solid blue;
+    }
 }

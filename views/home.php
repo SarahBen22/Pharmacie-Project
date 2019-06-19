@@ -77,29 +77,31 @@ require_once "navbar.php"
 
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="../img/neutre.png" width="120px" height="60%">
+    <img class="card-img-top" src="../img/phytothe.jpg" width="80px" height="60%">
     <div class="card-body">
-      <h4 class="card-title">Produit 1</h4>
-      <p class="card-text">blablablalablabla.</p>
-       <a href="#" class="btn btn-primary">Plus d'informations</a>
+      <h4 class="card-title">Phytothérapie</h4>
+      <p class="card-text">Traitement de 20 jours, le produit est sous forme d'ampoule et améliore la mobilité, la souplesse etc.<br>Prix:14€90</p>
+       <!-- <a href="#" class="btn btn-primary">Plus d'informations</a> -->
     </div>
   </div>
 
   <div class="card">
-    <img class="card-img-top" src="../img/neutre.png" width="120px" height="60%">
+    <img class="card-img-top" src="../img/prodvet.jpg" width="80px" height="60%">
     <div class="card-body">
-      <h4 class="card-title">Produit 2</h4>
-      <p class="card-text">blablablalablabla.</p>
-       <a href="#" class="btn btn-primary">Plus d'informations</a>
+      <h4 class="card-title">Produit vétérinaire</h4>
+      <p class="card-text">Traitement anti puce et tique pour les chiens de 10 à 20kg.<br> Prix:24€67</p>
+       <!-- <a href="#" class="btn btn-primary">Plus d'informations</a> -->
     </div>
   </div>
 
   <div class="card">
-    <img class="card-img-top" src="../img/neutre.png" width="120px" height="60%">
+    <img class="card-img-top" src="../img/bb.jpg" width="80px" height="60%">
     <div class="card-body">
-      <h4 class="card-title">Produit 3</h4>
-      <p class="card-text">blablablalablabla.</p>
-     <a href="#" class="btn btn-primary">Plus d'informations</a>
+      <h4 class="card-title">Liniment bio</h4>
+      <p class="card-text">Formule naturelle, bio, contient 50% d'huile d'olive bio.
+        <br> Prix:9€50
+      </p>
+     <!-- <a href="#" class="btn btn-primary">Plus d'informations</a> -->
     </div>
   </div>
 </div>
